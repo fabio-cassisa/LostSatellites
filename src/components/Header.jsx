@@ -16,8 +16,8 @@ export const Header = () => {
           <a onClick={() => scrollToSection('a')} className="menu-element">ABOUT US</a>
           <a onClick={() => scrollToSection('s')} className="menu-element">SERVICES</a>
           <Logo />
-          <a onClick={() => scrollToSection('j')} className="menu-element">JOIN US</a>
           <a onClick={() => scrollToSection('c')} className="menu-element">CONTACTS</a>
+          <a onClick={() => scrollToSection('j')} className="menu-element">JOIN US</a>
         </nav>
     </header>
   )
