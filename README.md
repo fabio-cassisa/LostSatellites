@@ -1,8 +1,7 @@
-# React + Vite
+# Lost Satellites, design studio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Lost Satellites, est. 2024, is a design studio based in Rome. This is the project for their initial landing page. This project is created in React, with no back-end at the moment. Is using GSAP.js for some animation. All the assets have been crafted by the studio.
 
-Currently, two official plugins are available:
+## Authors
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [@octokatherine](https://www.github.com/octokatherine)
