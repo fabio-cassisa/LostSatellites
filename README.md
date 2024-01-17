@@ -4,4 +4,4 @@ Lost Satellites, est. 2024, is a design studio based in Rome. This is the projec
 
 ## Authors
 
-- [@octokatherine](https://www.github.com/octokatherine)
+- [@fabio-cassisa](https://www.github.com/octokatherine)
