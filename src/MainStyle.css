@@ -1,0 +1,52 @@
+.main-wrapper {
+    display: flex;
+    flex-flow: column;
+    gap: 10px;
+}
+
+.header-menu {
+    height: 100px;
+    background-color: #D9D9D9;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.header-menu-nav {
+    padding-top: 35px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.about-section {
+    height: 1200px;
+    background-color: #d55b5b;
+    border-color: #ffffff;
+    border: 5px solid;
+} 
+.services-section {
+    height: 1200px;
+    background-color: #1a486e;
+    border-color: #ffffff;
+    border: 5px solid;
+} 
+.contacts-section {
+    height: 1200px;
+    background-color: #11790f;
+    border-color: #ffffff;
+    border: 5px solid;
+} 
+.join-section {
+    height: 1200px;
+    background-color: #000000;
+    border-color: #ffffff;
+    border: 5px solid;
+}
+
+.header-menu p {
+    color: #ffffff;
+    font-size: 1em;
+}
