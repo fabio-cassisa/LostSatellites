@@ -1,6 +1,6 @@
 //Here all the SVG assets will be stored. To be used as components throughout the whole application.
 
-export const Logo = () => {
+export const FullLogoWhite = () => {
     return (
         <svg 
             width="210" 
@@ -67,5 +67,22 @@ export const Logo = () => {
             />
         </svg>
 
+  )
+};
+
+export const LogoBlack = () => {
+    return (
+        <svg 
+            width="62" 
+            height="62" 
+            viewBox="0 0 62 62" 
+            fill="none" 
+            xmlns="http://www.w3.org/2000/svg"
+        >
+            <path 
+                d="M0 0V61.5H61.5V0H0ZM55.32 47.58L30.68 48.67L6.12 36.78V32.81H22.55L26.19 39.11H35.18L38.81 32.82L55.33 42.81V47.58H55.32ZM55.32 29.83H38.81L35.17 23.53H26.18L22.55 29.82L6.12 19.89V15.09L30.68 13.97L55.32 25.98V29.84V29.83Z" 
+                fill="#231F20"
+            />
+        </svg>
   )
 };
