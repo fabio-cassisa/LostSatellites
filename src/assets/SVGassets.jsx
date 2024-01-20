@@ -86,3 +86,40 @@ export const LogoBlack = () => {
         </svg>
   )
 };
+
+
+export const LeftBracket = () => {
+  return (
+        <svg 
+            width="32" 
+            height="92" 
+            viewBox="0 0 32 92" 
+            fill="none" 
+            xmlns="http://www.w3.org/2000/svg"
+            className="left-bracket"
+        >
+            <path 
+                d="M0 0H31.2V16.704H9.12L18.72 0.959999V90.528L9.12 74.688H31.2V91.488H0V0Z" 
+                fill="white"
+            />
+        </svg>
+  )
+}
+
+export const RightBracket = () => {
+    return (
+        <svg 
+            width="32" 
+            height="92" 
+            viewBox="0 0 32 92" 
+            fill="none" 
+            xmlns="http://www.w3.org/2000/svg"
+            className="right-bracket"
+        >
+            <path 
+                d="M31.2 91.488H0V74.688H22.08L12.48 90.528V0.959999L22.08 16.704H0V0H31.2V91.488Z" 
+                fill="white"
+            />
+        </svg> 
+    )
+  }
