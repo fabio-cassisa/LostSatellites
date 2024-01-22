@@ -20,6 +20,13 @@
     align-items: center;
 }
 
+.home-section {
+    height: 2400px;
+    background-color: #256b70;
+    border-color: #ffffff;
+    border: 5px solid; 
+}
+
 .about-section {
     height: 1200px;
     background-color: #d55b5b;
@@ -27,7 +34,10 @@
     border: 5px solid;
 } 
 .services-section {
-    height: 1200px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    height: 2400px;
     background-color: #1a486e;
     border-color: #ffffff;
     border: 5px solid;
@@ -39,6 +49,9 @@
     border: 5px solid;
 } 
 .join-section {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
     height: 1200px;
     background-color: #000000;
     border-color: #ffffff;
@@ -74,10 +87,17 @@
     align-items: center;
     font-size: 1.5rem; /* Adjust the font size as needed */
 }
-  
 
+.right-bracket, .left-bracket {
+    padding-left: 20px;
+    padding-right: 20px;
+}
 
-
-  .title-text {
+.title-text {
     margin: 0 10px; /* Adjust the spacing as needed */
+    color: #ffffff;
+    font-family: "objektiv-mk1", sans-serif;
+    font-size: 96px;
+    font-weight: 900;
+    font-style: normal;
 }
