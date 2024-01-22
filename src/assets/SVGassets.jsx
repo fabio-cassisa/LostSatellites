@@ -1,6 +1,6 @@
 //Here all the SVG assets will be stored. To be used as components throughout the whole application.
 
-export const FullLogoWhite = () => {
+export const FullLogoWhite = ({onClick}) => {
     return (
         <svg 
             width="210" 
@@ -8,6 +8,8 @@ export const FullLogoWhite = () => {
             viewBox="0 0 210 25" 
             fill="none" 
             xmlns="http://www.w3.org/2000/svg"
+            onClick={onClick}
+            style={{ cursor: 'pointer' }}
         >
             <path 
                 d="M0 1.02539V24.762H23.7929V1.02539H0ZM21.4068 19.3909L11.875 19.812L2.37378 15.2222V13.6902H8.73037L10.1375 16.1194H13.6125L15.0197 13.6902L21.413 17.5476V19.3909H21.4068ZM21.4068 12.5366H15.0197L13.6125 10.1074H10.1375L8.73037 12.5366L2.36766 8.69751V6.84814L11.8689 6.41479L21.4007 11.0474V12.5366H21.4068Z" 
