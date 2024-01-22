@@ -2,6 +2,7 @@ import React from 'react'
 import { Header } from '../components/Header'
 import { HeaderMinAnimated } from '../components/headerMinAnimated'
 import { AnimatedTitle } from '../components/AnimatedTitle'
+import { Footer } from '../components/Footer'
 
 function Landing() {
   return (
@@ -34,6 +35,7 @@ function Landing() {
           rightBracket={{ scaleX: 1, x: '0%' }} 
           />
         </section>
+        <Footer />
     </div>
   )
 }

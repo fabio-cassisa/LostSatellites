@@ -125,3 +125,43 @@ export const RightBracket = () => {
         </svg> 
     )
   }
+
+  export const ArrowDown = () => {
+    return (
+        <svg 
+            width="159" 
+            height="176" 
+            viewBox="0 0 159 176" 
+            fill="none" 
+            xmlns="http://www.w3.org/2000/svg"
+        >
+            <path 
+                fill-rule="evenodd" 
+                clip-rule="evenodd" 
+                d="M102.906 0H55.9062V92.5036L29.8129 66.208L0 95.7916L79.4065 175.814L158.813 95.7916L129 66.208L102.906 92.504V0Z" 
+                fill="white"
+            />
+        </svg>
+
+    )
+  }
+
+  export const ArrowUp = () => {
+    return (
+        <svg 
+            width="60" 
+            height="82" 
+            viewBox="0 0 60 82" 
+            fill="none" 
+            xmlns="http://www.w3.org/2000/svg"
+        >
+            <path 
+                fill-rule="evenodd" 
+                clip-rule="evenodd" 
+                d="M59.5903 29.1612L47 42.0253L38.2954 33.5059V65.5936H21.2954V33.5054L12.5903 42.0253L0 29.1612L29.7952 0L59.5903 29.1612ZM38.2959 71.5938H21.2959V81.5938H38.2959V71.5938Z" 
+                fill="white"
+            />
+        </svg>
+
+    )
+  }
