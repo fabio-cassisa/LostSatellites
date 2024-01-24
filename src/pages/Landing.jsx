@@ -3,12 +3,24 @@ import { Header } from '../components/Header'
 import { HeaderMinAnimated } from '../components/headerMinAnimated'
 import { AnimatedTitle } from '../components/AnimatedTitle'
 import { Footer } from '../components/Footer'
+import { LeftBracket, LeftBracketColored, LogoVertical, Rectangle01, RightBracketColored } from '../assets/SVGassets'
 
 function Landing() {
   return (
     <div className='main-wrapper'>
-        <Header />
-        <section id='h' className='home-section'></section>
+        <HeaderMinAnimated />
+        <section id='h' className='home-section'>
+          <div className='sx-side-graphic'>
+          <Rectangle01 />
+          <LogoVertical />
+          <Rectangle01 />
+          <div className='benv-orbita-wrapper'>
+            <LeftBracketColored />
+            <p className='benv-orbita-text'>BENVENUTO<div>IN ORBITA</div></p>
+            <RightBracketColored />
+          </div>
+          </div>
+        </section>
         <section id='a' className='about-section'>
           <AnimatedTitle text={"EQUIPAGGIO"} 
           leftBracket={{ scaleX: 1, x: '0%' }} 

@@ -15,7 +15,7 @@ export const AnimatedTitle = ({ text, style, leftBracket, rightBracket }) => {
       opacity: 1,
       scrollTrigger: {
         trigger: animatedTitle,
-        start: 'top center', // Adjust as needed
+        start: 'center center', // Adjust as needed
         end: '+=150', // Adjust as needed
         toggleActions: 'play none none none',
         scrub: 1,
@@ -27,7 +27,7 @@ export const AnimatedTitle = ({ text, style, leftBracket, rightBracket }) => {
     const headerTimeline = gsap.timeline({
       scrollTrigger: {
         trigger: animatedTitle,
-        start: 'top center', // Adjust as needed
+        start: 'center center', // Adjust as needed
         end: '+=150', // Adjust as needed
         toggleActions: 'play none none none',
         once: true, // Animating only once after scrolling through the page.
@@ -36,15 +36,15 @@ export const AnimatedTitle = ({ text, style, leftBracket, rightBracket }) => {
 
     // Initially set the left bracket and hide the text
     headerTimeline
-      .set('.left-bracket', { ...leftBracket, transformOrigin: '0% 50%' })
-      .set('.right-bracket', { ...rightBracket, transformOrigin: '0% 50%' })
+      .set('.left-bracket', { ...leftBracket, opacity: 1, transformOrigin: '0% 50%' })
+      .set('.right-bracket', { ...rightBracket, opacity: 1, transformOrigin: '0% 50%' })
       .set('.title-text', { opacity: 0, y: '100%' });
 
     // Animation to open the right bracket, revealing the text
     headerTimeline
-      .to('.left-bracket', { scaleX: 1, x: '0%', duration: 1.5, ease: 'power2.out' })
-      .to('.right-bracket', { scaleX: 1, x: '0%', duration: 1.5, ease: 'power2.out' })
-      .to('.title-text', { opacity: 1, y: '0%', duration: 0.5, ease: 'power2.out' }, "+=0.25"); // Starts after the right bracket animation
+      .to('.left-bracket', { opacity: 1, scaleX: 1, x: '0%', duration: 1, ease: 'power2.out' })
+      .to('.right-bracket', { opacity: 1, scaleX: 1, x: '0%', duration: 1, ease: 'power2.out' })
+      .to('.title-text', { opacity: 1, y: '0%', duration: 0.5, ease: 'power2.out' }, "+=0.15"); // Starts after the right bracket animation
   }, [leftBracket, rightBracket]);
 
   return (

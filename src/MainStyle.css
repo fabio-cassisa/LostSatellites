@@ -4,7 +4,6 @@
 }
 
 .header-menu {
-    background-color: #D9D9D9;
     position: fixed;
     padding-top: 30px;
     padding-bottom: 30px;
@@ -15,6 +14,7 @@
 }
 
 .footer-container {
+    background-color: #000000;
     padding: 20px;
     display: flex;
     justify-content: space-between;
@@ -30,14 +30,50 @@
 }
 
 .header-menu-nav {
+    padding: 0 30px 0 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.links-wrapper {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    gap: 20px;
+}
+
+.sx-side-graphic {
+    padding-left: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.logo-vertical-bar {
+    margin-left: 3px;
+}
+
+.benv-orbita-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.benv-orbita-text {
+    margin: 0;
+    background: linear-gradient(180deg, rgb(123.09, 255, 152.11) 0%, rgb(162.01, 255, 249.42) 100%);
+    background-clip: text;
+    color: transparent; 
+    font-family: "objektiv-mk1", sans-serif;
+    font-size: 64px;
+    font-weight: 900;
+    font-style: normal;
 }
 
 .home-section {
     height: 2400px;
-    background-color: #256b70;
+    background-color: #000000;
     border-color: #ffffff;
     border: 5px solid; 
 }

@@ -1,5 +1,5 @@
 //Header of the website
-import { LogoBlack } from "../assets/SVGassets"
+import { LogoMinInverted } from "../assets/SVGassets"
 import { gsap } from "gsap";
 import ScrollToPlugin from 'gsap/ScrollToPlugin';
 
@@ -13,11 +13,13 @@ export const HeaderMinAnimated = () => {
   return (
     <header className="header-menu">
         <nav className="header-menu-nav">
-          <LogoBlack />
-          <a onClick={() => scrollToSection('a')} className="menu-element">ABOUT US</a>
-          <a onClick={() => scrollToSection('s')} className="menu-element">SERVICES</a>
-          <a onClick={() => scrollToSection('c')} className="menu-element">CONTACTS</a>
-          <a onClick={() => scrollToSection('j')} className="menu-element">JOIN US</a>
+          <LogoMinInverted />
+          <div className="links-wrapper">
+          <a onClick={() => scrollToSection('a')} className="menu-element">about</a>
+          <a onClick={() => scrollToSection('s')} className="menu-element">services</a>
+          <a onClick={() => scrollToSection('c')} className="menu-element">contacts</a>
+          <a onClick={() => scrollToSection('j')} className="menu-element">join-us</a>
+          </div>
         </nav>
     </header>
   )
