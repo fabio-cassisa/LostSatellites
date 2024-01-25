@@ -12,14 +12,14 @@ function Landing() {
         <HeaderMinAnimated />
         <section id='h' className='home-section'>
           <div className='sx-side-graphic'>
-          <Rectangle01 />
-          <LogoVertical />
-          <Rectangle01 />
-          <OrbitaAnimatedTitle 
-          leftBracket={{ scaleX: 1, x: '0%' }} 
-          rightBracket={{ scaleX: 1, x: '-1020%' }}
-          />
-          <Rectangle02 />
+            <Rectangle01 />
+            <LogoVertical />
+            <Rectangle01 />
+            <OrbitaAnimatedTitle 
+            leftBracket={{ scaleX: 1, x: '0%' }} 
+            rightBracket={{ scaleX: 1, x: '-1020%' }}
+            />
+            <Rectangle02 />
           </div>
         </section>
         <section id='a' className='about-section'>
@@ -29,11 +29,14 @@ function Landing() {
           />
         </section>
         <section id='s' className='services-section'>
-          <AnimatedTitle text={"GALASSIE"} 
-          style={{ paddingRight: '0%' }} 
-          leftBracket={{ scaleX: 1, x: '500%' }} 
-          rightBracket={{ scaleX: 1, x: '0%' }} 
-          />
+          <div className='rect-pink'></div>
+            <div className='dx-side-graphic'>
+              <AnimatedTitle text={"GALASSIE"} 
+              style={{ paddingRight: '0%' }} 
+              leftBracket={{ scaleX: 1, x: '500%' }} 
+              rightBracket={{ scaleX: 1, x: '0%' }} 
+              />
+            </div>
         </section>
         <section id='c' className='contacts-section'>
           <AnimatedTitle text={"CONTACTS"}
