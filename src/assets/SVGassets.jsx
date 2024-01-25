@@ -133,6 +133,7 @@ export const LeftBracketColored = () => {
             viewBox="0 0 53 155" 
             fill="none" 
             xmlns="http://www.w3.org/2000/svg"
+            className="left-bracket-col"
         >
             <path d="M0 0H53V27.8367H31.9277V125.898H53V155H0V0Z" fill="url(#paint0_linear_2707_49)"/>
             <defs>
@@ -153,6 +154,7 @@ export const RightBracketColored = () => {
             viewBox="0 0 53 155" 
             fill="none" 
             xmlns="http://www.w3.org/2000/svg"
+            className="right-bracket-col"
         >
             <path d="M53 155L1.52588e-05 155L1.28252e-05 127.163L21.0723 127.163L21.0723 29.102L4.25244e-06 29.102L1.70826e-06 4.63341e-06L53 0L53 155Z" fill="url(#paint0_linear_2707_25)"/>
             <defs>
@@ -232,12 +234,34 @@ export const RightBracket = () => {
             viewBox="0 0 24 608" 
             fill="none" 
             xmlns="http://www.w3.org/2000/svg"
+            className="rectangle01"
         >
             <rect x="0.5" y="607.5" width="607" height="23" transform="rotate(-90 0.5 607.5)" fill="url(#paint0_linear_2713_177)"/>
             <defs>
             <linearGradient id="paint0_linear_2713_177" x1="-6.39115e-07" y1="620" x2="592.16" y2="620" gradientUnits="userSpaceOnUse">
             <stop stop-color="#A8FD9A"/>
             <stop offset="1" stop-color="#FDFFA2"/>
+            </linearGradient>
+            </defs>
+        </svg>
+    )
+  }
+
+  export const Rectangle02 = () => {
+    return (
+        <svg 
+            width="24" 
+            height="608" 
+            viewBox="0 0 24 608" 
+            fill="none" 
+            xmlns="http://www.w3.org/2000/svg"
+            className="rectangle02"
+        >
+            <rect y="608" width="608" height="24" transform="rotate(-90 0 608)" fill="url(#paint0_linear_2707_22)"/>
+            <defs>
+            <linearGradient id="paint0_linear_2707_22" x1="608" y1="620" x2="-1.79788e-07" y2="620" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#7BFFE7"/>
+            <stop offset="1" stop-color="#A2C7FF"/>
             </linearGradient>
             </defs>
         </svg>
@@ -325,4 +349,4 @@ export const RightBracket = () => {
     )
   }
   
-  
+

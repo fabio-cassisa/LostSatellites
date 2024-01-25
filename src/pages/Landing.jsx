@@ -2,8 +2,9 @@ import React from 'react'
 import { Header } from '../components/Header'
 import { HeaderMinAnimated } from '../components/headerMinAnimated'
 import { AnimatedTitle } from '../components/AnimatedTitle'
+import { OrbitaAnimatedTitle } from '../components/OrbitaAnimatedTitle'
 import { Footer } from '../components/Footer'
-import { LeftBracket, LeftBracketColored, LogoVertical, Rectangle01, RightBracketColored } from '../assets/SVGassets'
+import { LeftBracket, LeftBracketColored, LogoVertical, Rectangle01, Rectangle02, RightBracketColored } from '../assets/SVGassets'
 
 function Landing() {
   return (
@@ -14,11 +15,11 @@ function Landing() {
           <Rectangle01 />
           <LogoVertical />
           <Rectangle01 />
-          <div className='benv-orbita-wrapper'>
-            <LeftBracketColored />
-            <p className='benv-orbita-text'>BENVENUTO<div>IN ORBITA</div></p>
-            <RightBracketColored />
-          </div>
+          <OrbitaAnimatedTitle 
+          leftBracket={{ scaleX: 1, x: '0%' }} 
+          rightBracket={{ scaleX: 1, x: '-1020%' }}
+          />
+          <Rectangle02 />
           </div>
         </section>
         <section id='a' className='about-section'>

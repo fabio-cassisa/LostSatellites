@@ -19,7 +19,7 @@ export const AnimatedTitle = ({ text, style, leftBracket, rightBracket }) => {
         end: '+=150', // Adjust as needed
         toggleActions: 'play none none none',
         scrub: 1,
-        markers: true, // Setting the markers for testing! TO BE REMOVED.
+        markers: false, // Setting the markers for testing! TO BE REMOVED.
         once: true, // Animating only once after scrolling through the page.
       },
     });

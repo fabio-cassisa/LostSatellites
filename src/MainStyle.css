@@ -56,8 +56,11 @@
 
 .benv-orbita-wrapper {
     display: flex;
-    align-items: center;
-    gap: 20px;
+    flex-direction: column;
+    padding-top: 55px;
+    padding-left: 20px;
+    padding-right: 20px;
+    
 }
 
 .benv-orbita-text {
@@ -69,6 +72,16 @@
     font-size: 64px;
     font-weight: 900;
     font-style: normal;
+}
+
+.benv-orbita-subtext {
+    color:#ffffff;
+    margin: 0;
+    font-size: 18px;
+}
+
+.rectangle02 {
+
 }
 
 .home-section {
