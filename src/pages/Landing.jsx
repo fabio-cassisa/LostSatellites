@@ -35,7 +35,7 @@ function Landing() {
               </div>
           </div>
         </section>
-        <section id='c' className='contacts-section'>
+        <section id='c' className='eve-section'>
           <AnimatedTitle text={"CONTACTS"}
           leftBracket={{ scaleX: 1, x: '0' }} 
           rightBracket={{ scaleX: 1, x: '-500%' }} 
