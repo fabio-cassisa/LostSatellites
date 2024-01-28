@@ -268,6 +268,46 @@ export const RightBracket = () => {
     )
   }
 
+  export const Rectangle03 = () => {
+    return (
+        <svg 
+            width="24" 
+            height="250" 
+            viewBox="0 0 24 250" 
+            fill="none" 
+            xmlns="http://www.w3.org/2000/svg"
+        >
+            <path d="M4.45856e-06 250L-6.46928e-06 0L24 -1.04907e-06L24 250L4.45856e-06 250Z" fill="url(#paint0_linear_2717_182)"/>
+        <defs>
+        <linearGradient id="paint0_linear_2717_182" x1="12" y1="-4.50613e-07" x2="12.0001" y2="250" gradientUnits="userSpaceOnUse">
+        <stop stop-color="#BD7BFF"/>
+        <stop offset="0.974347" stop-color="#FFA2F6"/>
+        </linearGradient>
+        </defs>
+        </svg>
+    )
+  }
+
+  export const Rectangle04 = () => {
+    return (
+        <svg 
+            width="24" 
+            height="328" 
+            viewBox="0 0 24 328" 
+            fill="none" 
+            xmlns="http://www.w3.org/2000/svg"
+        >
+        <path d="M4.45856e-06 328L-9.87877e-06 0L24 -1.04907e-06L24 328L4.45856e-06 328Z" fill="url(#paint0_linear_2717_179)"/>
+        <defs>
+        <linearGradient id="paint0_linear_2717_179" x1="12" y1="-4.27549e-07" x2="12.0001" y2="328" gradientUnits="userSpaceOnUse">
+        <stop offset="0.00571573" stop-color="#FFA2F6"/>
+        <stop offset="1" stop-color="#FF7BA3"/>
+        </linearGradient>
+        </defs>
+        </svg>  
+    )
+  }
+
   export const LogoVertical = () => {
     return (
         <svg 

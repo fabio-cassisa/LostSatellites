@@ -43,8 +43,8 @@ export const OrbitaAnimatedTitle = ({ leftBracket, rightBracket }) => {
     <div className="animated-title" ref={animatedTitleRef}>
         <LeftBracketColored />
             <div className='benv-orbita-wrapper'>
-            <p className='benv-orbita-text'>BENVENUTO<div>IN ORBITA</div></p>
-            <p className='benv-orbita-subtext'>Tutta la creatività di cui hai bisogno<div>in un unico spazio.</div></p>
+            <div className='benv-orbita-text'>BENVENUTO<div>IN ORBITA</div></div>
+            <div className='benv-orbita-subtext'>Tutta la creatività di cui hai bisogno<div>in un unico spazio.</div></div>
             </div>
         <RightBracketColored />
     </div>

@@ -30,7 +30,7 @@
 }
 
 .header-menu-nav {
-    padding: 0 30px 0 30px;
+    padding: 0 25px 0 25px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -44,6 +44,7 @@
 }
 
 .sx-side-graphic {
+    width: 800px;
     padding-left: 25px;
     display: flex;
     flex-direction: column;
@@ -80,18 +81,35 @@
     font-size: 18px;
 }
 
+.galassie-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
 .rect-pink {
-    height: 809px;
-    width: 1187px;
+    height: 782px;
+    width: 80%;
     background: linear-gradient(180deg, rgb(255, 162.01, 245.7) 0.57%, rgb(255, 123.09, 162.66) 100%);
     z-index: 1;
+}
+
+.dx-side-graphic {
+    width: 20%;
+    z-index: 800;
+    padding-right: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    gap: 30px;
 }
 
 .home-section {
     height: 2400px;
     background-color: #000000;
     border-color: #ffffff;
-    border: 5px solid; 
 }
 
 .about-section {
@@ -102,17 +120,9 @@
 } 
 .services-section {
     height: 2400px;
-    background-color: #1a486e;
+    background-color: #000000;
     border-color: #ffffff;
-    border: 5px solid;
 } 
-
-.dx-side-graphic {
-    position: fixed;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
 
 .contacts-section {
     height: 1200px;
@@ -158,16 +168,13 @@
     display: flex;
     align-items: center;
     font-size: 1.5rem; /* Adjust the font size as needed */
-    z-index:1000
-}
-
-.right-bracket, .left-bracket {
-    padding-left: 20px;
-    padding-right: 20px;
+    z-index: index 900;
 }
 
 .title-text {
-    margin: 0 10px; /* Adjust the spacing as needed */
+    margin: 0; /* Adjust the spacing as needed */
+    padding-left: 20px;
+    padding-right: 20px;
     color: #ffffff;
     font-family: "objektiv-mk1", sans-serif;
     font-size: 96px;

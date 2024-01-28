@@ -4,7 +4,7 @@ import { HeaderMinAnimated } from '../components/headerMinAnimated'
 import { AnimatedTitle } from '../components/AnimatedTitle'
 import { OrbitaAnimatedTitle } from '../components/OrbitaAnimatedTitle'
 import { Footer } from '../components/Footer'
-import { LeftBracket, LeftBracketColored, LogoVertical, Rectangle01, Rectangle02, RightBracketColored } from '../assets/SVGassets'
+import { LeftBracket, LeftBracketColored, LogoVertical, Rectangle01, Rectangle02, Rectangle03, Rectangle04, RightBracketColored } from '../assets/SVGassets'
 
 function Landing() {
   return (
@@ -22,21 +22,18 @@ function Landing() {
             <Rectangle02 />
           </div>
         </section>
-        <section id='a' className='about-section'>
-          <AnimatedTitle text={"EQUIPAGGIO"} 
-          leftBracket={{ scaleX: 1, x: '0%' }} 
-          rightBracket={{ scaleX: 1, x: '-550%' }}
-          />
-        </section>
         <section id='s' className='services-section'>
-          <div className='rect-pink'></div>
-            <div className='dx-side-graphic'>
-              <AnimatedTitle text={"GALASSIE"} 
-              style={{ paddingRight: '0%' }} 
-              leftBracket={{ scaleX: 1, x: '500%' }} 
-              rightBracket={{ scaleX: 1, x: '0%' }} 
-              />
-            </div>
+          <div className='galassie-wrapper'>
+            <div className='rect-pink'></div>
+              <div className='dx-side-graphic'>
+                <Rectangle03 />
+                <AnimatedTitle text={"GALASSIE"} 
+                leftBracket={{ scaleX: 1, x: '500%' }} 
+                rightBracket={{ scaleX: 1, x: '0%' }} 
+                />
+                <Rectangle04 />
+              </div>
+          </div>
         </section>
         <section id='c' className='contacts-section'>
           <AnimatedTitle text={"CONTACTS"}

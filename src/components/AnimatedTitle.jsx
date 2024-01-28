@@ -1,9 +1,10 @@
 import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { CSSPlugin } from 'gsap/CSSPlugin'; // Import CSSPlugin
 import { LeftBracket, RightBracket } from '../assets/SVGassets';
 
-gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrollTrigger, CSSPlugin); // Register plugins
 
 export const AnimatedTitle = ({ text, style, leftBracket, rightBracket }) => {
   const animatedTitleRef = useRef(null);
