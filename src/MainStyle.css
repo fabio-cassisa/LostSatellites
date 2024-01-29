@@ -4,7 +4,6 @@
 }
 
 .header-menu {
-    background-color: #D9D9D9;
     position: fixed;
     padding-top: 30px;
     padding-bottom: 30px;
@@ -15,6 +14,7 @@
 }
 
 .footer-container {
+    background-color: #000000;
     padding: 20px;
     display: flex;
     justify-content: space-between;
@@ -30,47 +30,112 @@
 }
 
 .header-menu-nav {
+    padding: 0 25px 0 25px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
 }
 
-.home-section {
-    height: 2400px;
-    background-color: #256b70;
-    border-color: #ffffff;
-    border: 5px solid; 
+.links-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
 }
 
-.about-section {
-    height: 1200px;
-    background-color: #d55b5b;
-    border-color: #ffffff;
-    border: 5px solid;
-} 
-.services-section {
+.sx-side-graphic {
+    position: relative;
+    z-index: 2;
+    width: 800px;
+    padding-left: 25px;
     display: flex;
-    align-items: flex-start;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.logo-vertical-bar {
+    margin-left: 3px;
+}
+
+.benv-orbita-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding-top: 55px;
+    padding-left: 20px;
+    padding-right: 20px;
+    
+}
+
+.benv-orbita-text {
+    margin: 0;
+    background: linear-gradient(180deg, rgb(123.09, 255, 152.11) 0%, rgb(162.01, 255, 249.42) 100%);
+    background-clip: text;
+    color: transparent; 
+    font-family: "objektiv-mk1", sans-serif;
+    font-size: 64px;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.benv-orbita-subtext {
+    color:#ffffff;
+    margin: 0;
+    font-size: 18px;
+}
+
+.galassie-wrapper {
+    margin-top: -100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rect-pink {
+    position: relative;
+    height: 782px;
+    width: 85%;
+    background: linear-gradient(180deg, rgb(255, 162.01, 245.7) 0.57%, rgb(255, 123.09, 162.66) 100%);
+    z-index: 1;
+}
+
+.rectangle03 {
+    margin-bottom: -210px;
+}
+
+.rectangle04 {
+    margin-top: -210px;
+}
+
+.dx-side-graphic {
+    width: 15%;
+    z-index: 800;
+    padding-right: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
     justify-content: flex-end;
-    height: 2400px;
-    background-color: #1a486e;
+}
+
+.home-section {
+    background-color: #000000;
     border-color: #ffffff;
-    border: 5px solid;
+}
+
+.services-section {
+    background-color: #000000;
+    border-color: #ffffff;
 } 
-.contacts-section {
-    height: 1200px;
-    background-color: #11790f;
-    border-color: #ffffff;
-    border: 5px solid;
+
+.eve-section {
+    height: 1024px;
+    background-color: #000000;
 } 
 .join-section {
     display: flex;
     align-items: flex-start;
     justify-content: flex-end;
-    height: 1200px;
+    height: 700px;
     background-color: #000000;
-    border-color: #ffffff;
-    border: 5px solid;
 }
 
 .menu-element {
@@ -101,18 +166,70 @@
     display: flex;
     align-items: center;
     font-size: 1.5rem; /* Adjust the font size as needed */
+    z-index: index 900;
 }
 
-.right-bracket, .left-bracket {
+.title-wrapper {
+    display: flex;
+    padding-top: 240px;
+    flex-direction: column;
     padding-left: 20px;
     padding-right: 20px;
 }
 
 .title-text {
-    margin: 0 10px; /* Adjust the spacing as needed */
+    margin: 0; /* Adjust the spacing as needed */
     color: #ffffff;
     font-family: "objektiv-mk1", sans-serif;
     font-size: 96px;
     font-weight: 900;
     font-style: normal;
+}
+
+.title-subtext {
+    color:#ffffff;
+    margin: 0;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.sx-eve-graphic {
+    position: relative;
+    z-index: 2;
+    margin-top: -50px;
+    padding-left: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.eve-text-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 70px;
+}
+
+.eve-description {
+    font-size: 20px;
+}
+
+.rome2024 {
+    margin-left: 3px;
+}
+
+.eveOfVertical {
+    margin-left: -1px;
+}
+
+.logoVerticalFooter {
+    margin-left: -8.5px;
+}
+
+.eve-main-wrapper {
+    margin-top: -1170px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
 }
