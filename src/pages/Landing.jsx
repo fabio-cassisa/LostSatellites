@@ -1,10 +1,10 @@
 import React from 'react'
-import { Header } from '../components/Header'
 import { HeaderMinAnimated } from '../components/headerMinAnimated'
-import { AnimatedTitle } from '../components/AnimatedTitle'
 import { OrbitaAnimatedTitle } from '../components/OrbitaAnimatedTitle'
 import { Footer } from '../components/Footer'
-import { LeftBracket, LeftBracketColored, LogoVertical, Rectangle01, Rectangle02, Rectangle03, Rectangle04, RightBracketColored } from '../assets/SVGassets'
+import { EveOfVertical, LeftBracketOutline, LogoVertical, LogoVerticalFooter, Rectangle01, Rectangle02, Rectangle03, Rectangle04, Rectangle05, RightBracketOutline, Rome2024 } from '../assets/SVGassets'
+import { GalassieAnimatedTitle } from '../components/GalassieAnimatedTitle'
+
 
 function Landing() {
   return (
@@ -27,7 +27,8 @@ function Landing() {
             <div className='rect-pink'></div>
               <div className='dx-side-graphic'>
                 <Rectangle03 />
-                <AnimatedTitle text={"GALASSIE"} 
+                <GalassieAnimatedTitle
+                text={"GALASSIE"}
                 leftBracket={{ scaleX: 1, x: '500%' }} 
                 rightBracket={{ scaleX: 1, x: '0%' }} 
                 />
@@ -36,17 +37,26 @@ function Landing() {
           </div>
         </section>
         <section id='c' className='eve-section'>
-          <AnimatedTitle text={"CONTACTS"}
-          leftBracket={{ scaleX: 1, x: '0' }} 
-          rightBracket={{ scaleX: 1, x: '-500%' }} 
-          />
+          <div className='sx-eve-graphic'>
+            <Rome2024 />
+            <div className='eve-text-wrapper'>
+              <Rectangle05 />
+              <p className='eve-description'>
+              Il nostro progetto di punta è <strong> Eve of Destruction</strong>,<br />un videogame action RPG 2D completamente illustrato a mano,<br />
+              vincitore del bando Zagarolo Game House (Lazio Innova, 2023).
+              </p>
+            </div>
+            <EveOfVertical />
+            <Rectangle05 />
+            <LogoVerticalFooter />
+            <div className='eve-main-wrapper'>
+              <LeftBracketOutline />
+              <img src="../src/assets/ben.png" alt="main character Eve of Destruction" />
+              <RightBracketOutline />
+            </div>
+          </div>
         </section>
         <section id='j' className='join-section'>
-          <AnimatedTitle text={"JOIN US"} 
-          style={{ paddingRight: '0%' }} 
-          leftBracket={{ scaleX: 1, x: '500%' }} 
-          rightBracket={{ scaleX: 1, x: '0%' }} 
-          />
         </section>
         <Footer />
     </div>

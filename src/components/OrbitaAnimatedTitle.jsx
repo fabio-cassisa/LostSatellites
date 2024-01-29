@@ -1,4 +1,4 @@
-import { useEffect, useState, useRef } from 'react';
+import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { LeftBracketColored, RightBracketColored } from '../assets/SVGassets';
@@ -36,7 +36,7 @@ export const OrbitaAnimatedTitle = ({ leftBracket, rightBracket }) => {
       .to('.left-bracket-col', { opacity: 1, scaleX: 1, x: '0%', duration: 1, ease: 'power2.out' })
       .to('.right-bracket-col', { opacity: 1, scaleX: 1, x: '0%', duration: 1, ease: 'power2.out' })
       .to('.benv-orbita-text', { opacity: 1, y: '0%', duration: 0.5, ease: 'power2.out' }, "+=0.15") 
-      .to('.benv-orbita-subtext', { opacity: 1, y: '0%', duration: 0.5, ease: 'power2.out' }, "+=0.25")// Starts after the right bracket animation
+      .to('.benv-orbita-subtext', { opacity: 1, y: '0%', duration: 0.5, ease: 'power2.out' }, "+=0.25");// Starts after the right bracket animation
   }, [leftBracket, rightBracket]);
 
   return (
