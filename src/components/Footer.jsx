@@ -11,7 +11,7 @@ export const Footer = () => {
 
   return (
     <footer className="footer-container">
-        <FullLogoWhite onClick={() => scrollToSection('h')} className="menu-element" />
+        <FullLogoWhite onClick={() => scrollToSection('home')} className="menu-element" />
         <h3 className="language">EN/IT</h3>
         <ArrowUp />
     </footer>
