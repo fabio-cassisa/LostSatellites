@@ -10,9 +10,9 @@ import { HomeAnimation } from '../components/HomeAnimation'
 function Landing() {
   return (
     <div className='main-wrapper'>
-         <HeaderMinAnimated /> 
+        <HeaderMinAnimated /> 
         <section id='home' className='home-section'>
-         {/* <HomeAnimation /> */}
+          <HomeAnimation />
           <div className='sx-side-graphic'>
             <Rectangle01 />
             <LogoVertical />

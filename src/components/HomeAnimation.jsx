@@ -1,76 +1,71 @@
 import React, { useEffect, useRef } from 'react';
-import { gsap, Power0 } from 'gsap';
-import ScrollMagic from 'scrollmagic';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger'; // Import ScrollTrigger separately
+
+// Register ScrollTrigger plugin
+gsap.registerPlugin(ScrollTrigger);
 
 export const HomeAnimation = () => {
   const animationContainerRef = useRef(null);
+  const canvasRef = useRef(null);
+  const contextRef = useRef(null);
+  const frameCount = 47;
+
+  const currentFrame = (index) => `/animation/pirata/${index}_.png`;
 
   useEffect(() => {
-    // Create a GSAP timeline for your animation
-    const timeline = gsap.timeline({ paused: true });
-  
-    // Add your frame-by-frame animation to the timeline with stagger
-    timeline.to(
-      animationContainerRef.current.children, 
-      { opacity: 1, ease: Power0.easeNone, stagger: 0.5 }
-    );
-    // Add more frames as needed...
-  
-    // Create a ScrollMagic controller
-    const controller = new ScrollMagic.Controller();
-  
-    // Create a ScrollMagic scene
-    new ScrollMagic.Scene({
-      triggerElement: animationContainerRef.current,
-      triggerHook: 0, // Trigger when the animation container enters the viewport
-      duration: timeline.duration() * window.innerHeight, // Duration of the scroll animation
-    })
-      .setPin(animationContainerRef.current) // Pin the container during the animation
-      .on('progress', (e) => {
-        // Update the timeline progress based on scroll position
-        timeline.progress(e.progress);
-      })
-      .addTo(controller);
-  
-    // Cleanup when the component unmounts
+    // Animation timeline
+    const tl = gsap.timeline({ ease: 'none' });
+    tl.to(animationContainerRef.current, { opacity: 1, duration: 1 });
+
+    // ScrollMagic scene
+    ScrollTrigger.create({
+      trigger: animationContainerRef.current,
+      start: 'top top',
+      end: `+=${frameCount * window.innerHeight * 0.05}`,
+      pin: animationContainerRef.current,
+      onUpdate: (self) => {
+        const frameIndex = Math.min(
+          frameCount - 1,
+          Math.ceil(self.progress * frameCount)
+        );
+
+        const img = new Image();
+        img.src = currentFrame(frameIndex);
+
+        // Draw image directly without waiting for onload
+        contextRef.current.drawImage(img, 0, 0);
+      },
+    });
+
+    // Cleanup ScrollTrigger on component unmount
     return () => {
-      controller.destroy(true);
-      timeline.kill();
+      ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
     };
   }, []);
-  
+
+  // Preload initial image
+  useEffect(() => {
+    const canvas = canvasRef.current;
+    const context = canvas.getContext('2d');
+    contextRef.current = context;
+
+    const img = new Image();
+    img.src = currentFrame(0);
+
+    img.onload = () => {
+      context.drawImage(img, 0, 0);
+    };
+  }, []);
 
   return (
-    <div
-      className='home-animation'
-      ref={animationContainerRef}
-      style={{
-        position: 'absolute',
-        top: 0,
-        left: 0,
-        width: '100%',
-        height: '100%',
-        opacity: 0, // Initial opacity
-        overflow: 'hidden',
-      }}
-    >
-      {/* Render your frame-by-frame images here */}
-      {Array.from({ length: 10 }, (_, index) => (
-        <img
-          key={index}
-          src={`../src/assets/animation/pirata/${index}_.png`}
-          alt={`Frame ${index + 1}`}
-          style={{
-            position: 'absolute',
-            top: 0,
-            left: 0,
-            width: '100%',
-            height: '100%',
-            opacity: 0, // Initial opacity
-            zIndex: 10 - index, // Set zIndex to show frames in the correct order
-          }}
-        />
-      ))}
+    <div className="animation-container" ref={animationContainerRef}>
+      <canvas
+        className="animation-canvas"
+        ref={canvasRef}
+        width='1920'
+        height='1080'
+      />
     </div>
   );
 };
