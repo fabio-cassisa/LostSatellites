@@ -4,13 +4,15 @@ import { OrbitaAnimatedTitle } from '../components/OrbitaAnimatedTitle'
 import { Footer } from '../components/Footer'
 import { EveOfVertical, LeftBracketOutline, LogoVertical, LogoVerticalFooter, Rectangle01, Rectangle02, Rectangle03, Rectangle04, Rectangle05, RightBracketOutline, Rome2024 } from '../assets/SVGassets'
 import { GalassieAnimatedTitle } from '../components/GalassieAnimatedTitle'
+import { HomeAnimation } from '../components/HomeAnimation'
 
 
 function Landing() {
   return (
     <div className='main-wrapper'>
-        <HeaderMinAnimated />
-        <section id='h' className='home-section'>
+        <HeaderMinAnimated /> 
+        <section id='home' className='home-section'>
+          <HomeAnimation />
           <div className='sx-side-graphic'>
             <Rectangle01 />
             <LogoVertical />
@@ -22,7 +24,7 @@ function Landing() {
             <Rectangle02 />
           </div>
         </section>
-        <section id='s' className='services-section'>
+        <section id='services' className='services-section'>
           <div className='galassie-wrapper'>
             <div className='rect-pink'></div>
               <div className='dx-side-graphic'>
@@ -36,7 +38,7 @@ function Landing() {
               </div>
           </div>
         </section>
-        <section id='c' className='eve-section'>
+        <section id='eve' className='eve-section'>
           <div className='sx-eve-graphic'>
             <Rome2024 />
             <div className='eve-text-wrapper'>
@@ -56,7 +58,7 @@ function Landing() {
             </div>
           </div>
         </section>
-        <section id='j' className='join-section'>
+        <section id='join' className='join-section'>
         </section>
         <Footer />
     </div>

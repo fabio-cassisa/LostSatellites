@@ -13,12 +13,11 @@ export const HeaderMinAnimated = () => {
   return (
     <header className="header-menu">
         <nav className="header-menu-nav">
-          <LogoMinInverted />
+          <LogoMinInverted onClick={() => scrollToSection('home')} className="menu-element" />
           <div className="links-wrapper">
-          <a onClick={() => scrollToSection('a')} className="menu-element">about</a>
-          <a onClick={() => scrollToSection('s')} className="menu-element">services</a>
-          <a onClick={() => scrollToSection('c')} className="menu-element">eve-of-destruction</a>
-          <a onClick={() => scrollToSection('j')} className="menu-element">join-us</a>
+          <a onClick={() => scrollToSection('services')} className="menu-element">services</a>
+          <a onClick={() => scrollToSection('eve')} className="menu-element">eve-of-destruction</a>
+          <a onClick={() => scrollToSection('join')} className="menu-element">join-us</a>
           </div>
         </nav>
     </header>
