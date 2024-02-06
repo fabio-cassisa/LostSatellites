@@ -13,7 +13,10 @@ export const Footer = () => {
     <footer className="footer-container">
         <FullLogoWhite onClick={() => scrollToSection('home')} className="menu-element" />
         <h3 className="language">EN/IT</h3>
-        <ArrowUp />
+        <div className="footer-join-content">
+          <h3>JOIN US</h3>
+          <p>lostsatellitestudio@gmail.com</p>
+        </div>
     </footer>
   )
 }
