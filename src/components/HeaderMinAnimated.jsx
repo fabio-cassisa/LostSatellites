@@ -16,8 +16,8 @@ export const HeaderMinAnimated = () => {
           <LogoMinInverted onClick={() => scrollToSection('home')} className="menu-element" />
           <div className="links-wrapper">
           <a onClick={() => scrollToSection('services')} className="menu-element">services</a>
-          <a onClick={() => scrollToSection('eve')} className="menu-element">eve-of-destruction</a>
-          <a onClick={() => scrollToSection('join')} className="menu-element">join-us</a>
+          <a onClick={() => scrollToSection('eve')} className="menu-element">eod</a>
+          <a onClick={() => scrollToSection('join')} className="menu-element">join</a>
           </div>
         </nav>
     </header>

@@ -3,13 +3,12 @@
 export const FullLogoWhite = ({onClick}) => {
     return (
         <svg 
-            width="210" 
-            height="25" 
             viewBox="0 0 210 25" 
             fill="none" 
             xmlns="http://www.w3.org/2000/svg"
             onClick={onClick}
             style={{ cursor: 'pointer' }}
+            className="full-logo-white"
         >
             <path 
                 d="M0 1.02539V24.762H23.7929V1.02539H0ZM21.4068 19.3909L11.875 19.812L2.37378 15.2222V13.6902H8.73037L10.1375 16.1194H13.6125L15.0197 13.6902L21.413 17.5476V19.3909H21.4068ZM21.4068 12.5366H15.0197L13.6125 10.1074H10.1375L8.73037 12.5366L2.36766 8.69751V6.84814L11.8689 6.41479L21.4007 11.0474V12.5366H21.4068Z" 
@@ -345,11 +344,10 @@ export const RightBracket = () => {
   export const LeftBracketOutline = () => {
     return (
         <svg 
-            width="55" 
-            height="157" 
             viewBox="0 0 55 157" 
             fill="none" 
             xmlns="http://www.w3.org/2000/svg"
+            className="left-bracket-outline"
         >
             <path d="M1 1L54 1L54 28.8367L32.9277 28.8367L32.9277 126.898L54 126.898L54 156L1 156L1 1Z" stroke="white" stroke-width="2"/>
         </svg>
@@ -359,8 +357,6 @@ export const RightBracket = () => {
   export const RightBracketOutline = () => {
     return (
         <svg 
-            width="55" 
-            height="157" 
             viewBox="0 0 55 157" 
             fill="none" 
             xmlns="http://www.w3.org/2000/svg"
@@ -374,12 +370,10 @@ export const RightBracket = () => {
   export const EveOfVertical = () => {
     return (
         <svg 
-            width="27" 
-            height="266" 
             viewBox="0 0 27 266" 
             fill="none" 
             xmlns="http://www.w3.org/2000/svg"
-            className="eveOfVertical"
+            className="eve-of-vertical"
         >
         <g filter="url(#filter0_d_2812_23)">
         <path d="M21.9993 12.915L4.86328 12.915L4.86328 7.22702L18.2313 3.98703L18.2313 3.89102C17.6873 3.93902 17.1753 3.987 16.6953 4.035C16.2153 4.067 15.7673 4.09901 15.3513 4.13101C14.9193 4.14701 14.5113 4.16305 14.1273 4.17905C13.7433 4.19505 13.3593 4.20303 12.9753 4.20303L4.86328 4.20303L4.86328 0.435028L21.9993 0.435027L21.9993 5.97903L8.75128 9.31503L8.75128 9.41104C9.56728 9.34704 10.2473 9.29903 10.7913 9.26703C11.3353 9.23503 11.7913 9.21104 12.1593 9.19504C12.5273 9.17904 12.8633 9.17102 13.1673 9.17102C13.4713 9.15502 13.7913 9.14703 14.1273 9.14703L21.9993 9.14703L21.9993 12.915Z" fill="white"/>

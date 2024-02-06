@@ -39,7 +39,7 @@ function Landing() {
             leftBracket={{ scaleX: 1, x: '0%' }} 
             rightBracket={{ scaleX: 1, x: '-975%' }}
             />
-            <Rectangle02 />
+            {!isMobile && <Rectangle02 />}
           </div>
         </section>
         <section id='services' className='services-section'>
@@ -68,12 +68,15 @@ function Landing() {
                 <RightBracketOutline />
             </div>
           </div>
-          {!isMobile && (<div className='sx-eve-graphic'>
+          {isMobile && <EveOfVertical />}
+          {!isMobile && (
+          <div className='sx-eve-graphic'>
             <Rome2024 />
             <Rectangle05 />
             <EveOfVertical />
             <Rectangle05 />
-          </div>)}
+          </div>
+          )}
         </section>
         <section id='join' className='join-section'>
           <p className='join-links-wrapper'>

@@ -19,7 +19,9 @@
 .eve-section {
     background-color: #000000;
     position: relative;
+    height: 1200px;
 } 
+
 .join-section {
     background-color: #000000;
     position: relative;
@@ -267,32 +269,46 @@
     font-size: 1.2em;
 }
 
+.eve-of-vertical {
+    width: 27px; 
+    height: 266px;
+}
+
 .ben-gif {
     width: 55%;
     height: 55%;
 }
 
 .right-bracket-outline {
-    margin-left: -80px;
+    margin-left: -7vw;
+    height: 11vw;
 }
 
+.left-bracket-outline {
+    height: 11vw;
+}
 
 /* Flex for join us wrapper */
 .join-links-wrapper {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    padding-left: 25px;
+    justify-content: flex-start;
+    align-items: flex-start;
     color: #ffffff;
 }
-
 
 /* Footer classes settings */
 .footer-container {
     background-color: #000000;
-    padding: 20px;
+    padding: 0px 25px 50px 25px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.full-logo-white {
+    width: 210px;
+    height: 25px;
 }
 
 .footer-join-content {
@@ -301,12 +317,13 @@
     justify-content: center;
     align-items: flex-start;
     color: #ffffff;
+    font-size: 1em;
 }
 
 .language {
     color: #ffffff;
     font-family: "objektiv-mk1", sans-serif;
-    font-size: 20px;
+    font-size: 1.3em;
     font-weight: 900;
 }
 
@@ -316,14 +333,24 @@
 
 /* Medium devices (tablet) */
 @media (max-width: 1023px) {
-
+     .eve-content-wrapper {
+        padding: 340px 10px 340px 75px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 70px;
+    }
 }
 
 /* Small devices (phones) */
 @media (max-width: 767px) {
     .home-section {
-        height: 3500px;
+        height: 2700px;
     }
+
+    .eve-section {
+        height: min-content;
+    } 
 
     .menu-element {
         font-size: 0.9em;
@@ -362,6 +389,16 @@
         padding-bottom: 40vw;
     }
 
+    .dx-side-graphic {
+        z-index: 2;
+        width: 100%;
+        padding-right: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
     .title-wrapper {
         padding-top: 38vw;
         padding-left: 1.5vw;
@@ -390,7 +427,37 @@
         gap: 50px;
     }
 
+    .eve-of-vertical {
+        position: absolute;
+        top: 300px;
+        left: 25px;
+        width: 13.5px; 
+        height: 133px;
+    }
+
     .eve-description {
-        font-size: 1em;
+        font-size: 0.9em;
+    }
+
+    .right-bracket-outline {
+        margin-left: -11vw;
+        height: 23vw;
+    }
+    
+    .left-bracket-outline {
+        height: 23vw;
+    }
+
+    .language {
+        font-size: 0.5em;
+    }
+
+    .footer-join-content {
+        font-size: 0.5em;
+    }
+
+    .full-logo-white {
+        width: 105px;
+        height: 12.5px;
     }
 }
