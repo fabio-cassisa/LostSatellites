@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { HeaderMinAnimated } from '../components/headerMinAnimated'
+import { HeaderMinAnimated } from '../components/HeaderMinAnimated'
 import { OrbitaAnimatedTitle } from '../components/OrbitaAnimatedTitle'
 import { Footer } from '../components/Footer'
 import { EveOfVertical, LeftBracketOutline, LogoVertical, LogoVerticalFooter, Rectangle01, Rectangle02, Rectangle03, Rectangle04, Rectangle05, RightBracketOutline, Rome2024 } from '../assets/SVGassets'
@@ -28,7 +28,7 @@ function Landing() {
 
   return (
     <div className='main-wrapper'>
-        <HeaderMinAnimated /> 
+        <HeaderMinAnimated />
         <section id='home' className='home-section'>
           <HomeAnimation />
           <div className='sx-side-graphic'>
@@ -39,22 +39,32 @@ function Landing() {
             leftBracket={{ scaleX: 1, x: '0%' }} 
             rightBracket={{ scaleX: 1, x: '-975%' }}
             />
-            <Rectangle02 />
+            {!isMobile && <Rectangle02 />}
           </div>
         </section>
         <section id='services' className='services-section'>
-          <div className='galassie-wrapper'>
+          {isMobile ? (
+            <div className='rect-pink-mob'>
+              <GalassieAnimatedTitle
+                text={"GALASSIE"}
+                leftBracket={{ scaleX: 1, x: '500%' }} 
+                rightBracket={{ scaleX: 1, x: '0%' }} 
+                />
+            </div>
+          ) : (
+            <div className='galassie-wrapper'>
             <div className='rect-pink'></div>
             <div className='dx-side-graphic'>
-                 {!isMobile && <Rectangle03 />}
+                <Rectangle03 />
                 <GalassieAnimatedTitle
                 text={"GALASSIE"}
                 leftBracket={{ scaleX: 1, x: '500%' }} 
                 rightBracket={{ scaleX: 1, x: '0%' }} 
                 />
-                {!isMobile && <Rectangle04 />}
+                <Rectangle04 />
             </div>
-          </div>
+            </div>
+          )}
         </section>
         <section id='eve' className='eve-section'>
           <div className='eve-content-wrapper'>
