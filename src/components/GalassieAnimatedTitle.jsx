@@ -39,7 +39,7 @@ export const GalassieAnimatedTitle = ({ text, leftBracket, rightBracket }) => {
   }, [leftBracket, rightBracket]);
 
   return (
-    <div className="animated-title" ref={animatedTitleRef}>
+    <div className="animated-title galassie-animated-wrapper" ref={animatedTitleRef}>
         <LeftBracket />
         <div className='title-wrapper'>
           <div className="title-text">{text}</div>

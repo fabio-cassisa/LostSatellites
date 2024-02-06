@@ -112,8 +112,6 @@ export const LogoBlack = () => {
 export const LeftBracket = () => {
   return (
         <svg 
-            width="32" 
-            height="92" 
             viewBox="0 0 32 92" 
             fill="none" 
             xmlns="http://www.w3.org/2000/svg"
@@ -130,8 +128,6 @@ export const LeftBracket = () => {
 export const LeftBracketColored = () => {
     return (
         <svg 
-            width="53" 
-            height="155" 
             viewBox="0 0 53 155" 
             fill="none" 
             xmlns="http://www.w3.org/2000/svg"
@@ -151,8 +147,6 @@ export const LeftBracketColored = () => {
 export const RightBracketColored = () => {
     return (
         <svg 
-            width="53" 
-            height="155" 
             viewBox="0 0 53 155" 
             fill="none" 
             xmlns="http://www.w3.org/2000/svg"
@@ -173,8 +167,6 @@ export const RightBracketColored = () => {
 export const RightBracket = () => {
     return (
         <svg 
-            width="32" 
-            height="92" 
             viewBox="0 0 32 92" 
             fill="none" 
             xmlns="http://www.w3.org/2000/svg"
@@ -372,6 +364,7 @@ export const RightBracket = () => {
             viewBox="0 0 55 157" 
             fill="none" 
             xmlns="http://www.w3.org/2000/svg"
+            className="right-bracket-outline"
         >
             <path d="M54 156L1.00002 156L1.00001 128.163L22.0723 128.163L22.0723 30.102L1 30.102L1 1L54 1L54 156Z" stroke="white" stroke-width="2"/>
         </svg>
