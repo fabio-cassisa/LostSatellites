@@ -17,7 +17,7 @@ export const HeaderMinAnimated = () => {
           <div className="links-wrapper">
           <a onClick={() => scrollToSection('services')} className="menu-element">services</a>
           <a onClick={() => scrollToSection('eve')} className="menu-element">eod</a>
-          <a onClick={() => scrollToSection('join')} className="menu-element">join-us</a>
+          <a onClick={() => scrollToSection('join')} className="menu-element">join</a>
           </div>
         </nav>
     </header>

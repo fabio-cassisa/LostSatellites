@@ -78,12 +78,15 @@ function Landing() {
                 <RightBracketOutline />
             </div>
           </div>
-          {!isMobile && (<div className='sx-eve-graphic'>
+          {isMobile && <EveOfVertical />}
+          {!isMobile && (
+          <div className='sx-eve-graphic'>
             <Rome2024 />
             <Rectangle05 />
             <EveOfVertical />
             <Rectangle05 />
-          </div>)}
+          </div>
+          )}
         </section>
         <section id='join' className='join-section'>
           <p className='join-links-wrapper'>

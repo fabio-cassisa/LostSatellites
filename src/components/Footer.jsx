@@ -12,9 +12,9 @@ export const Footer = () => {
   return (
     <footer className="footer-container">
         <FullLogoWhite onClick={() => scrollToSection('home')} className="menu-element" />
-        <h3 className="language">EN/IT</h3>
+        <h3 className="language">Rome, 2024</h3>
         <div className="footer-join-content">
-          <h3>JOIN US</h3>
+          <h3>JOIN US:</h3>
           <p>lostsatellitestudio@gmail.com</p>
         </div>
     </footer>

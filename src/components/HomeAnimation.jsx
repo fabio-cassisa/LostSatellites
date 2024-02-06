@@ -59,6 +59,7 @@ export const HomeAnimation = () => {
   }, []);
 
   return (
+    <>
     <div className="animation-container" ref={animationContainerRef}>
       <canvas
         className="animation-canvas"
@@ -67,5 +68,7 @@ export const HomeAnimation = () => {
         height='1080'
       />
     </div>
+    <div className="fill-orbita-animation"></div>
+    </>
   );
 };

@@ -3,13 +3,12 @@
 export const FullLogoWhite = ({onClick}) => {
     return (
         <svg 
-            width="210" 
-            height="25" 
             viewBox="0 0 210 25" 
             fill="none" 
             xmlns="http://www.w3.org/2000/svg"
             onClick={onClick}
             style={{ cursor: 'pointer' }}
+            className="full-logo-white"
         >
             <path 
                 d="M0 1.02539V24.762H23.7929V1.02539H0ZM21.4068 19.3909L11.875 19.812L2.37378 15.2222V13.6902H8.73037L10.1375 16.1194H13.6125L15.0197 13.6902L21.413 17.5476V19.3909H21.4068ZM21.4068 12.5366H15.0197L13.6125 10.1074H10.1375L8.73037 12.5366L2.36766 8.69751V6.84814L11.8689 6.41479L21.4007 11.0474V12.5366H21.4068Z" 
@@ -136,8 +135,8 @@ export const LeftBracketColored = () => {
             <path d="M0 0H53V27.8367H31.9277V125.898H53V155H0V0Z" fill="url(#paint0_linear_2707_49)"/>
             <defs>
             <linearGradient id="paint0_linear_2707_49" x1="0" y1="0" x2="48.4925" y2="155.245" gradientUnits="userSpaceOnUse">
-            <stop stop-color="#7BF7FF"/>
-            <stop offset="1" stop-color="#C0FFA2"/>
+            <stop stopColor="#7BF7FF"/>
+            <stop offset="1" stopColor="#C0FFA2"/>
             </linearGradient>
             </defs>
         </svg>
@@ -155,8 +154,8 @@ export const RightBracketColored = () => {
             <path d="M53 155L1.52588e-05 155L1.28252e-05 127.163L21.0723 127.163L21.0723 29.102L4.25244e-06 29.102L1.70826e-06 4.63341e-06L53 0L53 155Z" fill="url(#paint0_linear_2707_25)"/>
             <defs>
             <linearGradient id="paint0_linear_2707_25" x1="26" y1="155" x2="26" y2="3.1418e-06" gradientUnits="userSpaceOnUse">
-            <stop stop-color="#A2FFF9"/>
-            <stop offset="1" stop-color="#7BFF98"/>
+            <stop stopColor="#A2FFF9"/>
+            <stop offset="1" stopColor="#7BFF98"/>
             </linearGradient>
             </defs>
         </svg>
@@ -190,8 +189,8 @@ export const RightBracket = () => {
             xmlns="http://www.w3.org/2000/svg"
         >
             <path 
-                fill-rule="evenodd" 
-                clip-rule="evenodd" 
+                fillRule="evenodd" 
+                clipRule="evenodd" 
                 d="M102.906 0H55.9062V92.5036L29.8129 66.208L0 95.7916L79.4065 175.814L158.813 95.7916L129 66.208L102.906 92.504V0Z" 
                 fill="white"
             />
@@ -210,8 +209,8 @@ export const RightBracket = () => {
             xmlns="http://www.w3.org/2000/svg"
         >
             <path 
-                fill-rule="evenodd" 
-                clip-rule="evenodd" 
+                fillRule="evenodd" 
+                clipRule="evenodd" 
                 d="M59.5903 29.1612L47 42.0253L38.2954 33.5059V65.5936H21.2954V33.5054L12.5903 42.0253L0 29.1612L29.7952 0L59.5903 29.1612ZM38.2959 71.5938H21.2959V81.5938H38.2959V71.5938Z" 
                 fill="white"
             />
@@ -234,8 +233,8 @@ export const RightBracket = () => {
             <rect x="0.5" y="607.5" width="607" height="23" transform="rotate(-90 0.5 607.5)" fill="url(#paint0_linear_2713_177)"/>
             <defs>
             <linearGradient id="paint0_linear_2713_177" x1="-6.39115e-07" y1="620" x2="592.16" y2="620" gradientUnits="userSpaceOnUse">
-            <stop stop-color="#A8FD9A"/>
-            <stop offset="1" stop-color="#FDFFA2"/>
+            <stop stopColor="#A8FD9A"/>
+            <stop offset="1" stopColor="#FDFFA2"/>
             </linearGradient>
             </defs>
         </svg>
@@ -255,8 +254,8 @@ export const RightBracket = () => {
             <rect y="608" width="608" height="24" transform="rotate(-90 0 608)" fill="url(#paint0_linear_2707_22)"/>
             <defs>
             <linearGradient id="paint0_linear_2707_22" x1="608" y1="620" x2="-1.79788e-07" y2="620" gradientUnits="userSpaceOnUse">
-            <stop stop-color="#7BFFE7"/>
-            <stop offset="1" stop-color="#A2C7FF"/>
+            <stop stopColor="#7BFFE7"/>
+            <stop offset="1" stopColor="#A2C7FF"/>
             </linearGradient>
             </defs>
         </svg>
@@ -276,8 +275,8 @@ export const RightBracket = () => {
             <path d="M4.45856e-06 250L-6.46928e-06 0L24 -1.04907e-06L24 250L4.45856e-06 250Z" fill="url(#paint0_linear_2717_182)"/>
         <defs>
         <linearGradient id="paint0_linear_2717_182" x1="12" y1="-4.50613e-07" x2="12.0001" y2="250" gradientUnits="userSpaceOnUse">
-        <stop stop-color="#BD7BFF"/>
-        <stop offset="0.974347" stop-color="#FFA2F6"/>
+        <stop stopColor="#BD7BFF"/>
+        <stop offset="0.974347" stopColor="#FFA2F6"/>
         </linearGradient>
         </defs>
         </svg>
@@ -297,8 +296,8 @@ export const RightBracket = () => {
         <path d="M4.45856e-06 328L-9.87877e-06 0L24 -1.04907e-06L24 328L4.45856e-06 328Z" fill="url(#paint0_linear_2717_179)"/>
         <defs>
         <linearGradient id="paint0_linear_2717_179" x1="12" y1="-4.27549e-07" x2="12.0001" y2="328" gradientUnits="userSpaceOnUse">
-        <stop offset="0.00571573" stop-color="#FFA2F6"/>
-        <stop offset="1" stop-color="#FF7BA3"/>
+        <stop offset="0.00571573" stopColor="#FFA2F6"/>
+        <stop offset="1" stopColor="#FF7BA3"/>
         </linearGradient>
         </defs>
         </svg>  
@@ -336,7 +335,7 @@ export const RightBracket = () => {
             fill="none" 
             xmlns="http://www.w3.org/2000/svg"
         >
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M1.99998 2L2 381L22 381L22 2L1.99998 2ZM0 383L24 383L24 -1.04907e-06L-1.67415e-05 0L0 383Z" fill="white"/>
+            <path fillRule="evenodd" clipRule="evenodd" d="M1.99998 2L2 381L22 381L22 2L1.99998 2ZM0 383L24 383L24 -1.04907e-06L-1.67415e-05 0L0 383Z" fill="white"/>
         </svg>
         
     )
@@ -345,13 +344,12 @@ export const RightBracket = () => {
   export const LeftBracketOutline = () => {
     return (
         <svg 
-            width="55" 
-            height="157" 
             viewBox="0 0 55 157" 
             fill="none" 
             xmlns="http://www.w3.org/2000/svg"
+            className="left-bracket-outline"
         >
-            <path d="M1 1L54 1L54 28.8367L32.9277 28.8367L32.9277 126.898L54 126.898L54 156L1 156L1 1Z" stroke="white" stroke-width="2"/>
+            <path d="M1 1L54 1L54 28.8367L32.9277 28.8367L32.9277 126.898L54 126.898L54 156L1 156L1 1Z" stroke="white" strokeWidth="2"/>
         </svg>
     )
   }
@@ -359,14 +357,12 @@ export const RightBracket = () => {
   export const RightBracketOutline = () => {
     return (
         <svg 
-            width="55" 
-            height="157" 
             viewBox="0 0 55 157" 
             fill="none" 
             xmlns="http://www.w3.org/2000/svg"
             className="right-bracket-outline"
         >
-            <path d="M54 156L1.00002 156L1.00001 128.163L22.0723 128.163L22.0723 30.102L1 30.102L1 1L54 1L54 156Z" stroke="white" stroke-width="2"/>
+            <path d="M54 156L1.00002 156L1.00001 128.163L22.0723 128.163L22.0723 30.102L1 30.102L1 1L54 1L54 156Z" stroke="white" strokeWidth="2"/>
         </svg>
     )
   }
@@ -374,12 +370,10 @@ export const RightBracket = () => {
   export const EveOfVertical = () => {
     return (
         <svg 
-            width="27" 
-            height="266" 
             viewBox="0 0 27 266" 
             fill="none" 
             xmlns="http://www.w3.org/2000/svg"
-            className="eveOfVertical"
+            className="eve-of-vertical"
         >
         <g filter="url(#filter0_d_2812_23)">
         <path d="M21.9993 12.915L4.86328 12.915L4.86328 7.22702L18.2313 3.98703L18.2313 3.89102C17.6873 3.93902 17.1753 3.987 16.6953 4.035C16.2153 4.067 15.7673 4.09901 15.3513 4.13101C14.9193 4.14701 14.5113 4.16305 14.1273 4.17905C13.7433 4.19505 13.3593 4.20303 12.9753 4.20303L4.86328 4.20303L4.86328 0.435028L21.9993 0.435027L21.9993 5.97903L8.75128 9.31503L8.75128 9.41104C9.56728 9.34704 10.2473 9.29903 10.7913 9.26703C11.3353 9.23503 11.7913 9.21104 12.1593 9.19504C12.5273 9.17904 12.8633 9.17102 13.1673 9.17102C13.4713 9.15502 13.7913 9.14703 14.1273 9.14703L21.9993 9.14703L21.9993 12.915Z" fill="white"/>
@@ -430,8 +424,8 @@ export const RightBracket = () => {
         <path d="M21.9993 257.076L4.86328 257.076L4.86328 245.556L8.46328 245.556L8.46328 252.972L11.3913 252.972L11.3913 245.868L14.9913 245.868L14.9913 252.972L18.3993 252.972L18.3993 245.556L21.9993 245.556L21.9993 257.076Z" fill="white"/>
         </g>
         <defs>
-        <filter id="filter0_d_2812_23" x="0.863281" y="0.435059" width="25.1357" height="20.48" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+        <filter id="filter0_d_2812_23" x="0.863281" y="0.435059" width="25.1357" height="20.48" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+        <feFlood floodOpacity="0" result="BackgroundImageFix"/>
         <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
         <feOffset dy="4"/>
         <feGaussianBlur stdDeviation="2"/>
@@ -440,8 +434,8 @@ export const RightBracket = () => {
         <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_2812_23"/>
         <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_2812_23" result="shape"/>
         </filter>
-        <filter id="filter1_d_2812_23" x="0.624023" y="14.8257" width="25.6162" height="20.48" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+        <filter id="filter1_d_2812_23" x="0.624023" y="14.8257" width="25.6162" height="20.48" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+        <feFlood floodOpacity="0" result="BackgroundImageFix"/>
         <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
         <feOffset dy="4"/>
         <feGaussianBlur stdDeviation="2"/>
@@ -450,8 +444,8 @@ export const RightBracket = () => {
         <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_2812_23"/>
         <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_2812_23" result="shape"/>
         </filter>
-        <filter id="filter2_d_2812_23" x="0.863281" y="29.9365" width="25.1357" height="19.04" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+        <filter id="filter2_d_2812_23" x="0.863281" y="29.9365" width="25.1357" height="19.04" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+        <feFlood floodOpacity="0" result="BackgroundImageFix"/>
         <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
         <feOffset dy="4"/>
         <feGaussianBlur stdDeviation="2"/>
@@ -460,8 +454,8 @@ export const RightBracket = () => {
         <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_2812_23"/>
         <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_2812_23" result="shape"/>
         </filter>
-        <filter id="filter3_d_2812_23" x="0.863281" y="43.127" width="25.1357" height="21.4399" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+        <filter id="filter3_d_2812_23" x="0.863281" y="43.127" width="25.1357" height="21.4399" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+        <feFlood floodOpacity="0" result="BackgroundImageFix"/>
         <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
         <feOffset dy="4"/>
         <feGaussianBlur stdDeviation="2"/>
@@ -470,8 +464,8 @@ export const RightBracket = () => {
         <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_2812_23"/>
         <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_2812_23" result="shape"/>
         </filter>
-        <filter id="filter4_d_2812_23" x="0.624023" y="57.8774" width="25.6162" height="20.6001" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+        <filter id="filter4_d_2812_23" x="0.624023" y="57.8774" width="25.6162" height="20.6001" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+        <feFlood floodOpacity="0" result="BackgroundImageFix"/>
         <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
         <feOffset dy="4"/>
         <feGaussianBlur stdDeviation="2"/>
@@ -480,8 +474,8 @@ export const RightBracket = () => {
         <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_2812_23"/>
         <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_2812_23" result="shape"/>
         </filter>
-        <filter id="filter5_d_2812_23" x="0.863281" y="72.3882" width="25.376" height="20.48" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+        <filter id="filter5_d_2812_23" x="0.863281" y="72.3882" width="25.376" height="20.48" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+        <feFlood floodOpacity="0" result="BackgroundImageFix"/>
         <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
         <feOffset dy="4"/>
         <feGaussianBlur stdDeviation="2"/>
@@ -490,8 +484,8 @@ export const RightBracket = () => {
         <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_2812_23"/>
         <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_2812_23" result="shape"/>
         </filter>
-        <filter id="filter6_d_2812_23" x="0.863281" y="85.939" width="25.1357" height="20.8398" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+        <filter id="filter6_d_2812_23" x="0.863281" y="85.939" width="25.1357" height="20.8398" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+        <feFlood floodOpacity="0" result="BackgroundImageFix"/>
         <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
         <feOffset dy="4"/>
         <feGaussianBlur stdDeviation="2"/>
@@ -500,8 +494,8 @@ export const RightBracket = () => {
         <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_2812_23"/>
         <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_2812_23" result="shape"/>
         </filter>
-        <filter id="filter7_d_2812_23" x="0.863281" y="100.689" width="25.1357" height="21.4399" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+        <filter id="filter7_d_2812_23" x="0.863281" y="100.689" width="25.1357" height="21.4399" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+        <feFlood floodOpacity="0" result="BackgroundImageFix"/>
         <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
         <feOffset dy="4"/>
         <feGaussianBlur stdDeviation="2"/>
@@ -510,8 +504,8 @@ export const RightBracket = () => {
         <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_2812_23"/>
         <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_2812_23" result="shape"/>
         </filter>
-        <filter id="filter8_d_2812_23" x="0.599609" y="115.704" width="25.6396" height="19.856" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+        <filter id="filter8_d_2812_23" x="0.599609" y="115.704" width="25.6396" height="19.856" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+        <feFlood floodOpacity="0" result="BackgroundImageFix"/>
         <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
         <feOffset dy="4"/>
         <feGaussianBlur stdDeviation="2"/>
@@ -520,8 +514,8 @@ export const RightBracket = () => {
         <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_2812_23"/>
         <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_2812_23" result="shape"/>
         </filter>
-        <filter id="filter9_d_2812_23" x="0.863281" y="130.431" width="25.1357" height="19.52" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+        <filter id="filter9_d_2812_23" x="0.863281" y="130.431" width="25.1357" height="19.52" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+        <feFlood floodOpacity="0" result="BackgroundImageFix"/>
         <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
         <feOffset dy="4"/>
         <feGaussianBlur stdDeviation="2"/>
@@ -530,8 +524,8 @@ export const RightBracket = () => {
         <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_2812_23"/>
         <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_2812_23" result="shape"/>
         </filter>
-        <filter id="filter10_d_2812_23" x="0.863281" y="143.861" width="25.1357" height="20.96" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+        <filter id="filter10_d_2812_23" x="0.863281" y="143.861" width="25.1357" height="20.96" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+        <feFlood floodOpacity="0" result="BackgroundImageFix"/>
         <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
         <feOffset dy="4"/>
         <feGaussianBlur stdDeviation="2"/>
@@ -540,8 +534,8 @@ export const RightBracket = () => {
         <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_2812_23"/>
         <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_2812_23" result="shape"/>
         </filter>
-        <filter id="filter11_d_2812_23" x="0.863281" y="173.603" width="25.1357" height="19.52" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+        <filter id="filter11_d_2812_23" x="0.863281" y="173.603" width="25.1357" height="19.52" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+        <feFlood floodOpacity="0" result="BackgroundImageFix"/>
         <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
         <feOffset dy="4"/>
         <feGaussianBlur stdDeviation="2"/>
@@ -550,8 +544,8 @@ export const RightBracket = () => {
         <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_2812_23"/>
         <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_2812_23" result="shape"/>
         </filter>
-        <filter id="filter12_d_2812_23" x="0.624023" y="187.513" width="25.6162" height="20.48" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+        <filter id="filter12_d_2812_23" x="0.624023" y="187.513" width="25.6162" height="20.48" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+        <feFlood floodOpacity="0" result="BackgroundImageFix"/>
         <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
         <feOffset dy="4"/>
         <feGaussianBlur stdDeviation="2"/>
@@ -560,8 +554,8 @@ export const RightBracket = () => {
         <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_2812_23"/>
         <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_2812_23" result="shape"/>
         </filter>
-        <filter id="filter13_d_2812_23" x="0.863281" y="216.774" width="25.1357" height="19.52" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+        <filter id="filter13_d_2812_23" x="0.863281" y="216.774" width="25.1357" height="19.52" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+        <feFlood floodOpacity="0" result="BackgroundImageFix"/>
         <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
         <feOffset dy="4"/>
         <feGaussianBlur stdDeviation="2"/>
@@ -570,8 +564,8 @@ export const RightBracket = () => {
         <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_2812_23"/>
         <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_2812_23" result="shape"/>
         </filter>
-        <filter id="filter14_d_2812_23" x="0.863281" y="229.845" width="25.1357" height="22.1602" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+        <filter id="filter14_d_2812_23" x="0.863281" y="229.845" width="25.1357" height="22.1602" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+        <feFlood floodOpacity="0" result="BackgroundImageFix"/>
         <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
         <feOffset dy="4"/>
         <feGaussianBlur stdDeviation="2"/>
@@ -580,8 +574,8 @@ export const RightBracket = () => {
         <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_2812_23"/>
         <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_2812_23" result="shape"/>
         </filter>
-        <filter id="filter15_d_2812_23" x="0.863281" y="245.556" width="25.1357" height="19.52" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+        <filter id="filter15_d_2812_23" x="0.863281" y="245.556" width="25.1357" height="19.52" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+        <feFlood floodOpacity="0" result="BackgroundImageFix"/>
         <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
         <feOffset dy="4"/>
         <feGaussianBlur stdDeviation="2"/>
@@ -656,56 +650,56 @@ export const RightBracket = () => {
             <path d="M17.9993 199.2L0.863281 199.2L0.863281 195L14.2793 195L14.2793 188.04L17.9993 188.04L17.9993 199.2Z" fill="url(#paint12_linear_2718_90)"/>
             <defs>
             <linearGradient id="paint0_linear_2718_90" x1="-60.0007" y1="201" x2="92.1036" y2="190.689" gradientUnits="userSpaceOnUse">         
-            <stop stop-color="#FDFFA2"/>
-            <stop offset="1" stop-color="#C0FFA2"/>
+            <stop stopColor="#FDFFA2"/>
+            <stop offset="1" stopColor="#C0FFA2"/>
             </linearGradient>
             <linearGradient id="paint1_linear_2718_90" x1="-60.0007" y1="201" x2="92.1036" y2="190.689" gradientUnits="userSpaceOnUse">         
-            <stop stop-color="#FDFFA2"/>
-            <stop offset="1" stop-color="#C0FFA2"/>
+            <stop stopColor="#FDFFA2"/>
+            <stop offset="1" stopColor="#C0FFA2"/>
             </linearGradient>
             <linearGradient id="paint2_linear_2718_90" x1="-60.0007" y1="201" x2="92.1036" y2="190.689" gradientUnits="userSpaceOnUse">         
-            <stop stop-color="#FDFFA2"/>
-            <stop offset="1" stop-color="#C0FFA2"/>
+            <stop stopColor="#FDFFA2"/>
+            <stop offset="1" stopColor="#C0FFA2"/>
             </linearGradient>
             <linearGradient id="paint3_linear_2718_90" x1="-60.0007" y1="201" x2="92.1036" y2="190.689" gradientUnits="userSpaceOnUse">
-            <stop stop-color="#FDFFA2"/>
-            <stop offset="1" stop-color="#C0FFA2"/>
+            <stop stopColor="#FDFFA2"/>
+            <stop offset="1" stopColor="#C0FFA2"/>
             </linearGradient>
             <linearGradient id="paint4_linear_2718_90" x1="-60.0007" y1="201" x2="92.1036" y2="190.689" gradientUnits="userSpaceOnUse">
-            <stop stop-color="#FDFFA2"/>
-            <stop offset="1" stop-color="#C0FFA2"/>
+            <stop stopColor="#FDFFA2"/>
+            <stop offset="1" stopColor="#C0FFA2"/>
             </linearGradient>
             <linearGradient id="paint5_linear_2718_90" x1="-60.0007" y1="201" x2="92.1036" y2="190.689" gradientUnits="userSpaceOnUse">
-            <stop stop-color="#FDFFA2"/>
-            <stop offset="1" stop-color="#C0FFA2"/>
+            <stop stopColor="#FDFFA2"/>
+            <stop offset="1" stopColor="#C0FFA2"/>
             </linearGradient>
             <linearGradient id="paint6_linear_2718_90" x1="-60.0007" y1="201" x2="92.1036" y2="190.689" gradientUnits="userSpaceOnUse">
-            <stop stop-color="#FDFFA2"/>
-            <stop offset="1" stop-color="#C0FFA2"/>
+            <stop stopColor="#FDFFA2"/>
+            <stop offset="1" stopColor="#C0FFA2"/>
             </linearGradient>
             <linearGradient id="paint7_linear_2718_90" x1="-60" y1="201" x2="92.1043" y2="190.689" gradientUnits="userSpaceOnUse">
-            <stop stop-color="#FDFFA2"/>
-            <stop offset="1" stop-color="#C0FFA2"/>
+            <stop stopColor="#FDFFA2"/>
+            <stop offset="1" stopColor="#C0FFA2"/>
             </linearGradient>
             <linearGradient id="paint8_linear_2718_90" x1="-60.0004" y1="201" x2="92.1039" y2="190.689" gradientUnits="userSpaceOnUse">
-            <stop stop-color="#FDFFA2"/>
-            <stop offset="1" stop-color="#C0FFA2"/>
+            <stop stopColor="#FDFFA2"/>
+            <stop offset="1" stopColor="#C0FFA2"/>
             </linearGradient>
             <linearGradient id="paint9_linear_2718_90" x1="-60.0007" y1="201" x2="92.1036" y2="190.689" gradientUnits="userSpaceOnUse">
-            <stop stop-color="#FDFFA2"/>
-            <stop offset="1" stop-color="#C0FFA2"/>
+            <stop stopColor="#FDFFA2"/>
+            <stop offset="1" stopColor="#C0FFA2"/>
             </linearGradient>
             <linearGradient id="paint10_linear_2718_90" x1="-60.0004" y1="201" x2="92.1039" y2="190.689" gradientUnits="userSpaceOnUse">
-            <stop stop-color="#FDFFA2"/>
-            <stop offset="1" stop-color="#C0FFA2"/>
+            <stop stopColor="#FDFFA2"/>
+            <stop offset="1" stopColor="#C0FFA2"/>
             </linearGradient>
             <linearGradient id="paint11_linear_2718_90" x1="-60" y1="201" x2="92.1043" y2="190.689" gradientUnits="userSpaceOnUse">
-            <stop stop-color="#FDFFA2"/>
-            <stop offset="1" stop-color="#C0FFA2"/>
+            <stop stopColor="#FDFFA2"/>
+            <stop offset="1" stopColor="#C0FFA2"/>
             </linearGradient>
             <linearGradient id="paint12_linear_2718_90" x1="-60.0007" y1="201" x2="92.1036" y2="190.689" gradientUnits="userSpaceOnUse">
-            <stop stop-color="#FDFFA2"/>
-            <stop offset="1" stop-color="#C0FFA2"/>
+            <stop stopColor="#FDFFA2"/>
+            <stop offset="1" stopColor="#C0FFA2"/>
             </linearGradient>
             </defs>
         </svg>
