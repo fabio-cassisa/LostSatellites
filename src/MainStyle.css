@@ -7,13 +7,13 @@
 .home-section {
     background-color: #000000;
     position: relative;
-    height: 4000px;
+    height: 3000px;
 }
 
 .services-section {
     background-color: #000000;
     position: relative;
-    height: 1000px;
+    height: min-content;
 } 
 
 .eve-section {
@@ -96,7 +96,7 @@
 /* SX-side graphic: first starting from the animation settings */
 .sx-side-graphic {
     position: absolute;
-    top: 1550px;
+    top: 900px;
     z-index: 2;
     width: min-content;
     padding-left: 25px;
@@ -147,6 +147,7 @@
 .animated-title {
     display: flex;
     align-items: center;
+    justify-content: center;
     z-index: 900;
 }
 
@@ -203,17 +204,19 @@
     z-index: 1;
 }
 
+.rect-pink-mob {
+    background: linear-gradient(180deg, rgb(255, 162.01, 245.7) 0.57%, rgb(255, 123.09, 162.66) 100%);
+    z-index: 1;
+}
+
 .dx-side-graphic {
-    position: absolute;
-    top: 0;
-    right: 0;
     z-index: 2;
-    width: 15%;
+    width: 100%;
     padding-right: 25px;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    justify-content: flex-end;
+    justify-content: space-between;
 }
 
 
@@ -318,6 +321,10 @@
 
 /* Small devices (phones) */
 @media (max-width: 767px) {
+    .home-section {
+        height: 3500px;
+    }
+
     .menu-element {
         font-size: 0.9em;
 
@@ -352,7 +359,7 @@
     }
 
     .galassie-animated-wrapper {
-        margin-top: 25vw;
+        padding-bottom: 40vw;
     }
 
     .title-wrapper {
@@ -375,7 +382,7 @@
     }
 
     .eve-content-wrapper {
-        padding: 50px 30px 50px 30px;
+        padding: 50px 70px 50px 70px;
         display: flex;
         flex-direction: column;
         justify-content: center;
