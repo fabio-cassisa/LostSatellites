@@ -7,7 +7,7 @@
 .home-section {
     background-color: #000000;
     position: relative;
-    height: max-content;
+    height: 3000px;
 }
 
 .services-section {
@@ -102,7 +102,7 @@
 /* SX-side graphic: first starting from the animation settings */
 .sx-side-graphic {
     position: absolute;
-    top: 700px;
+    top: 800px;
     z-index: 2;
     width: min-content;
     padding-left: 25px;

@@ -74,7 +74,7 @@ function Landing() {
             </p>
             <div className='eve-main-wrapper'>
                 <LeftBracketOutline />
-                <img className='ben-gif' src="../src/assets/ben_gif.gif" alt="main character Eve of Destruction" />
+                <img className='ben-gif' src="ben_gif.gif" alt="main character Eve of Destruction" />
                 <RightBracketOutline />
             </div>
           </div>
