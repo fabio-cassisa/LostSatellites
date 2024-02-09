@@ -13,7 +13,18 @@ export const HomeAnimation = () => {
 
   const currentFrame = (index) => `/animation/pirata/${index}_.png`;
 
+  // Function to preload all animation frames
+  const preloadImages = () => {
+    for (let i = 0; i < frameCount; i++) {
+      const img = new Image();
+      img.src = currentFrame(i);
+    }
+  };
+
   useEffect(() => {
+    // Preload images before animation starts
+    preloadImages();
+
     // Animation timeline
     const tl = gsap.timeline({ ease: 'none' });
     tl.to(animationContainerRef.current, { opacity: 1, duration: 1 });
@@ -44,7 +55,7 @@ export const HomeAnimation = () => {
     };
   }, []);
 
-  // Preload initial image
+  // Initialize canvas context and draw initial frame
   useEffect(() => {
     const canvas = canvasRef.current;
     const context = canvas.getContext('2d');

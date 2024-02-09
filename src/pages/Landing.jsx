@@ -41,6 +41,7 @@ function Landing() {
             />
             {!isMobile && <Rectangle02 />}
           </div>
+          <img className='color01' src="color01.png" alt="graphic01 on the right side" />
         </section>
         <section id='services' className='services-section'>
           {isMobile ? (
@@ -50,10 +51,13 @@ function Landing() {
                 leftBracket={{ scaleX: 1, x: '500%' }} 
                 rightBracket={{ scaleX: 1, x: '0%' }} 
                 />
+              <img className='color02' src="color02.png" alt="graphic02 on the left side" />
             </div>
           ) : (
             <div className='galassie-wrapper'>
-            <div className='rect-pink'></div>
+            <div className='rect-pink'>
+            <img className='color02' src="color02.png" alt="graphic02 on the left side" />
+            </div>
             <div className='dx-side-graphic'>
                 <Rectangle03 />
                 <GalassieAnimatedTitle
