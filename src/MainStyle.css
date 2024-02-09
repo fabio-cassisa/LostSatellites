@@ -7,7 +7,7 @@
 .home-section {
     background-color: #000000;
     position: relative;
-    height: 3000px;
+    height: 4000px;
 }
 
 .services-section {
@@ -102,13 +102,28 @@
 /* SX-side graphic: first starting from the animation settings */
 .sx-side-graphic {
     position: absolute;
-    top: 800px;
+    top: 1600px;
     z-index: 2;
     width: min-content;
     padding-left: 25px;
     display: flex;
     flex-direction: column;
     gap: 35px;
+}
+
+.color01 {
+    width: 95%;
+    position: absolute;
+    z-index: 5;
+    bottom: -250px;
+    right: 0px;
+}
+
+.color02 {
+    width: 100%;
+    position: absolute;
+    top: -100px;
+    left: 0px;
 }
 
 .logo-vertical-bar {
@@ -344,14 +359,25 @@
         align-items: center;
         gap: 70px;
     }
+
+    .color01 {
+        width: 100%;
+        position: absolute;
+        z-index: 1;
+        bottom: 50px;
+        right: 0px;
+    }
+    
+    .color02 {
+        width: 100%;
+        position: absolute;
+        top: 50px;
+        left: 0px;
+    }
 }
 
 /* Small devices (phones) */
 @media (max-width: 767px) {
-    .home-section {
-        height: 2700px;
-    }
-
     .eve-section {
         height: min-content;
     } 
@@ -383,6 +409,21 @@
     
     .benv-orbita-subtext {
         font-size: 2.8vw;
+    }
+
+    .color01 {
+        width: 100%;
+        position: absolute;
+        z-index: 1;
+        bottom: 150px;
+        right: 0px;
+    }
+    
+    .color02 {
+        width: 100%;
+        position: absolute;
+        top: 20px;
+        left: 0px;
     }
 
     .rect-pink {
