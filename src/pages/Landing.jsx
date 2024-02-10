@@ -1,30 +1,15 @@
-import { useState, useEffect } from 'react'
+import useIsMobile from '../hooks/useIsMobile'
 import { HeaderMinAnimated } from '../components/HeaderMinAnimated'
 import { OrbitaAnimatedTitle } from '../components/OrbitaAnimatedTitle'
 import { Footer } from '../components/Footer'
-import { EveOfVertical, LeftBracketOutline, LogoVertical, LogoVerticalFooter, Rectangle01, Rectangle02, Rectangle03, Rectangle04, Rectangle05, RightBracketOutline, Rome2024 } from '../assets/SVGassets'
+import { FooterMobile } from '../components/FooterMobile'
+import { EveOfVertical, FullLogoVerticalMob, LeftBracketOutline, LogoVertical, LogoVerticalFooter, Rectangle01, Rectangle02, Rectangle03, Rectangle04, Rectangle05, RightBracketOutline, Rome2024 } from '../assets/SVGassets'
 import { GalassieAnimatedTitle } from '../components/GalassieAnimatedTitle'
 import { HomeAnimation } from '../components/HomeAnimation'
 
 
 function Landing() {
-  const [isMobile, setIsMobile] = useState(false);
-
-  useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth <= 767); // Adjust the breakpoint according to your design
-    };
-
-    // Initial check on mount
-    handleResize();
-
-    // Listen for window resize events
-    window.addEventListener('resize', handleResize);
-
-    // Cleanup event listener on component unmount
-    return () => window.removeEventListener('resize', handleResize);
-  }, []);
-
+  const isMobile = useIsMobile();
 
   return (
     <div className='main-wrapper'>
@@ -35,10 +20,17 @@ function Landing() {
             <Rectangle01 />
             <LogoVertical />
             <Rectangle01 />
-            <OrbitaAnimatedTitle 
-            leftBracket={{ scaleX: 1, x: '0%' }} 
-            rightBracket={{ scaleX: 1, x: '-975%' }}
-            />
+            {isMobile ? (
+              <OrbitaAnimatedTitle 
+              leftBracket={{ scaleX: 1, x: '0%' }} 
+              rightBracket={{ scaleX: 1, x: '-1000%' }}
+              />
+            ) : (
+              <OrbitaAnimatedTitle 
+              leftBracket={{ scaleX: 1, x: '0%' }} 
+              rightBracket={{ scaleX: 1, x: '-975%' }}
+              />
+            )}
             {!isMobile && <Rectangle02 />}
           </div>
           <img className='color01' src="color01.png" alt="graphic01 on the right side" />
@@ -52,6 +44,7 @@ function Landing() {
                 rightBracket={{ scaleX: 1, x: '0%' }} 
                 />
               <img className='color02' src="color02.png" alt="graphic02 on the left side" />
+              <Rome2024 />
             </div>
           ) : (
             <div className='galassie-wrapper'>
@@ -92,17 +85,23 @@ function Landing() {
           </div>
           )}
         </section>
-        <section id='join' className='join-section'>
-          <p className='join-links-wrapper'>
-            X<br />
-            Discord<br />
-            Instagram<br />
-            Linkedin<br />
-            Steam<br />
-            Kickstarter<br />
-          </p>
-        </section>
-        <Footer />
+        {!isMobile &&
+                <section id='join' className='join-section'>
+                <p className='join-links-wrapper'>
+                  X<br />
+                  Discord<br />
+                  Instagram<br />
+                  Linkedin<br />
+                  Steam<br />
+                  Kickstarter<br />
+                </p>
+            </section>
+        }
+        {!isMobile ? (
+          <Footer />
+        ) : (
+          <FooterMobile />
+        )}
     </div>
   )
 }

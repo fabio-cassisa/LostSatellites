@@ -103,7 +103,7 @@
 .sx-side-graphic {
     position: absolute;
     top: 1600px;
-    z-index: 2;
+    z-index: 7;
     width: min-content;
     padding-left: 25px;
     display: flex;
@@ -256,6 +256,8 @@
 
 .rome2024 {
     margin-left: 3px;
+    width: 19px;
+    height: 128px;
 }
 
 .eveOfVertical {
@@ -312,8 +314,9 @@
     display: flex;
     padding-left: 25px;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: center;
     color: #ffffff;
+    gap: 20px;
 }
 
 /* Footer classes settings */
@@ -352,6 +355,10 @@
 
 /* Medium devices (tablet) */
 @media (max-width: 1023px) {
+    .home-section {
+        height: 3600px;
+    }
+
      .eve-content-wrapper {
         padding: 340px 10px 340px 75px;
         display: flex;
@@ -363,8 +370,8 @@
     .color01 {
         width: 100%;
         position: absolute;
-        z-index: 1;
-        bottom: 50px;
+        z-index: 5;
+        bottom: -170px;
         right: 0px;
     }
     
@@ -374,10 +381,18 @@
         top: 50px;
         left: 0px;
     }
+
+    .sx-side-graphic {
+        top: 1300px;
+    }
 }
 
 /* Small devices (phones) */
 @media (max-width: 767px) {
+    .home-section {
+        height: 3500px;
+    }
+
     .eve-section {
         height: min-content;
     } 
@@ -396,6 +411,17 @@
     height: 22vw; /* Allow the height to adjust proportionally */
     }
 
+    .sx-side-graphic {
+        position: absolute;
+        top: 1300px;
+        z-index: 2;
+        width: min-content;
+        padding-left: 25px;
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+    }
+
     .benv-orbita-wrapper {
         padding-top: 6.9vw;
         padding-left: 2vw;
@@ -412,10 +438,10 @@
     }
 
     .color01 {
-        width: 100%;
+        width: 130%;
         position: absolute;
         z-index: 1;
-        bottom: 150px;
+        bottom: -100px;
         right: 0px;
     }
     
@@ -428,6 +454,14 @@
 
     .rect-pink {
         width: 100%;
+    }
+
+    .rome2024 {
+        position: absolute;
+        height: 18%;
+        margin-left: 0px;
+        bottom: 50px;
+        right: 25px;
     }
 
     .galassie-animated-wrapper {
@@ -494,15 +528,24 @@
     }
 
     .language {
-        font-size: 0.5em;
+        font-size: 0.7em;
     }
 
     .footer-join-content {
-        font-size: 0.5em;
+        font-size: 0.7em;
     }
 
     .full-logo-white {
         width: 105px;
         height: 12.5px;
+    }
+
+    .join-links-wrapper {
+        font-size: 0.8em;
+        padding-left: 0px;
+    }
+
+    .footer-container {
+        padding: 0px 25px 30px 25px;
     }
 }
