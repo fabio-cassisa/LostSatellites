@@ -23,7 +23,7 @@ function Landing() {
             {isMobile ? (
               <OrbitaAnimatedTitle 
               leftBracket={{ scaleX: 1, x: '0%' }} 
-              rightBracket={{ scaleX: 1, x: '-1100%' }}
+              rightBracket={{ scaleX: 1, x: '-1000%' }}
               />
             ) : (
               <OrbitaAnimatedTitle 
@@ -98,11 +98,11 @@ function Landing() {
             </section>
         }
         {!isMobile ? (
-          <section id='join'>
             <Footer />
-          </section>
         ) : (
-          <FooterMobile />
+          <section id='join'>
+            <FooterMobile />
+          </section>
         )}
     </div>
   )
