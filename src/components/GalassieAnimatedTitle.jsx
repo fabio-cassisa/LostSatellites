@@ -18,7 +18,7 @@ export const GalassieAnimatedTitle = ({ text, leftBracket, rightBracket }) => {
         end: '+=600', // Adjust as needed
         toggleActions: 'play none none none',
         once: true, // Animating only once after scrolling through the page.
-        markers: true,
+        markers: false,
         scrub: 1,
       },
     });

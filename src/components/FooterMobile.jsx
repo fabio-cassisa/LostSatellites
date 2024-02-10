@@ -12,7 +12,7 @@ export const FooterMobile = () => {
   return (
     <footer className="footer-container">
         <p className='join-links-wrapper'>
-                <FullLogoVerticalMob />
+                <FullLogoVerticalMob onClick={() => scrollToSection('home')}/>
                   X<br />
                   Discord<br />
                   Instagram<br />

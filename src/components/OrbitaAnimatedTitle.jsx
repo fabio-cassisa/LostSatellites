@@ -19,7 +19,7 @@ export const OrbitaAnimatedTitle = ({ leftBracket, rightBracket }) => {
         toggleActions: 'play none none none',
         scrub: 1,
         once: true, // Animating only once after scrolling through the page.
-        markers: true,
+        markers: false,
       },
     });
 
