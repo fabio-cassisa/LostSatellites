@@ -1,11 +1,11 @@
 import useIsMobile from '../hooks/useIsMobile'
 import { HeaderMinAnimated } from '../components/HeaderMinAnimated'
+import { HomeAnimation } from '../components/HomeAnimation'
 import { OrbitaAnimatedTitle } from '../components/OrbitaAnimatedTitle'
+import { GalassieAnimatedTitle } from '../components/GalassieAnimatedTitle'
 import { Footer } from '../components/Footer'
 import { FooterMobile } from '../components/FooterMobile'
-import { EveOfVertical, FullLogoVerticalMob, LeftBracketOutline, LogoVertical, LogoVerticalFooter, Rectangle01, Rectangle02, Rectangle03, Rectangle04, Rectangle05, RightBracketOutline, Rome2024 } from '../assets/SVGassets'
-import { GalassieAnimatedTitle } from '../components/GalassieAnimatedTitle'
-import { HomeAnimation } from '../components/HomeAnimation'
+import { EveOfVertical, LeftBracketOutline, LogoVertical, Rectangle01, Rectangle02, Rectangle03, Rectangle04, Rectangle05, RightBracketOutline, Rome2024 } from '../assets/SVGassets'
 
 
 function Landing() {
