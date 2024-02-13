@@ -1,72 +1,65 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger'; // Import ScrollTrigger separately
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
-// Register ScrollTrigger plugin
 gsap.registerPlugin(ScrollTrigger);
 
 export const HomeAnimation = () => {
   const animationContainerRef = useRef(null);
   const canvasRef = useRef(null);
   const contextRef = useRef(null);
+  const [frameLoaded, setFrameLoaded] = useState([]);
   const frameCount = 47;
 
   const currentFrame = (index) => `/animation/pirata/${index}_.png`;
 
-  // Function to preload all animation frames
-  const preloadImages = () => {
-    for (let i = 0; i < frameCount; i++) {
-      const img = new Image();
-      img.src = currentFrame(i);
-    }
-  };
-
-  useEffect(() => {
-    // Preload images before animation starts
-    preloadImages();
-
-    // Animation timeline
-    const tl = gsap.timeline({ ease: 'none' });
-    tl.to(animationContainerRef.current, { opacity: 1, duration: 1 });
-
-    // ScrollMagic scene
-    ScrollTrigger.create({
-      trigger: animationContainerRef.current,
-      start: 'top top',
-      end: `+=${frameCount * window.innerHeight * 0.05}`,
-      pin: animationContainerRef.current,
-      onUpdate: (self) => {
-        const frameIndex = Math.min(
-          frameCount - 1,
-          Math.ceil(self.progress * frameCount)
-        );
-
-        const img = new Image();
-        img.src = currentFrame(frameIndex);
-
-        // Draw image directly without waiting for onload
-        contextRef.current.drawImage(img, 0, 0);
-      },
-    });
-
-    // Cleanup ScrollTrigger on component unmount
-    return () => {
-      ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
-    };
-  }, []);
-
-  // Initialize canvas context and draw initial frame
   useEffect(() => {
     const canvas = canvasRef.current;
     const context = canvas.getContext('2d');
     contextRef.current = context;
 
-    const img = new Image();
-    img.src = currentFrame(0);
-
-    img.onload = () => {
-      context.drawImage(img, 0, 0);
+    const handleScrollUpdate = () => {
+      const trigger = ScrollTrigger.getById('animation-trigger');
+      if (trigger && context) {
+        const frameIndex = Math.min(
+          frameCount - 1,
+          Math.ceil(trigger.progress * frameCount)
+        );
+        if (!frameLoaded[frameIndex]) {
+          const img = new Image();
+          img.src = currentFrame(frameIndex);
+          img.onload = () => {
+            context.drawImage(img, 0, 0);
+            setFrameLoaded((prev) => ({
+              ...prev,
+              [frameIndex]: true,
+            }));
+          };
+        }
+      }
     };
+
+    const tl = gsap.timeline({ ease: 'none' });
+    tl.to(animationContainerRef.current, { opacity: 1, duration: 1 });
+
+    ScrollTrigger.create({
+      id: 'animation-trigger',
+      trigger: animationContainerRef.current,
+      start: 'top top',
+      end: `+=${frameCount * window.innerHeight * 0.05}`,
+      pin: animationContainerRef.current,
+      onUpdate: handleScrollUpdate,
+    });
+
+    return () => {
+      ScrollTrigger.getById('animation-trigger').kill();
+    };
+  }, []);
+
+  useEffect(() => {
+    const canvas = canvasRef.current;
+    const context = canvas.getContext('2d');
+    contextRef.current = context;
   }, []);
 
   return (
