@@ -6,6 +6,7 @@ import { GalassieAnimatedTitle } from '../components/GalassieAnimatedTitle'
 import { Footer } from '../components/Footer'
 import { FooterMobile } from '../components/FooterMobile'
 import { EveOfVertical, LeftBracketOutline, LogoVertical, Rectangle01, Rectangle02, Rectangle03, Rectangle04, Rectangle05, RightBracketOutline, Rome2024 } from '../assets/SVGassets'
+import MobileMenu from '../components/MobileMenu'
 
 
 function Landing() {
@@ -13,7 +14,11 @@ function Landing() {
 
   return (
     <div className='main-wrapper'>
-        <HeaderMinAnimated />
+        {isMobile ? (
+          <MobileMenu />
+        ):(
+          <HeaderMinAnimated />
+        )}
         <section id='home' className='home-section'>
           <HomeAnimation />
           <div className='sx-side-graphic'>
