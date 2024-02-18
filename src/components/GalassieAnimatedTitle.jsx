@@ -18,8 +18,8 @@ export const GalassieAnimatedTitle = ({ text, leftBracket, rightBracket }) => {
         end: '+=600', // Adjust as needed
         toggleActions: 'play none none none',
         once: true, // Animating only once after scrolling through the page.
-        markers: false,
-        scrub: 1,
+        markers: true,
+        scrub: 0.5,
       },
     });
 
@@ -32,10 +32,10 @@ export const GalassieAnimatedTitle = ({ text, leftBracket, rightBracket }) => {
 
     // Animation to open the right bracket, revealing the text
     headerTimeline
-      .to('.left-bracket', { opacity: 1, scaleX: 1, x: '0%', duration: 1, ease: 'power2.out' })
+      .to('.left-bracket', { opacity: 1, scaleX: 1, x: '0%', duration: 1, delay: 1, ease: 'power2.out' })
       .to('.right-bracket', { opacity: 1, scaleX: 1, x: '0%', duration: 1, ease: 'power2.out' })
-      .to('.title-text', { opacity: 1, y: '0%', duration: 0.5, ease: 'power2.out' }, "+=0.15")
-      .to('.title-subtext', { opacity: 1, y: '0%', duration: 0.5, ease: 'power2.out' }, "+=0.25"); // Starts after the right bracket animation
+      .to('.title-text', { opacity: 1, y: '0%', duration: 0.5, ease: 'power2.out' }, "+=0.30")
+      .to('.title-subtext', { opacity: 1, y: '0%', duration: 0.5, ease: 'power2.out' }, "+=0.35"); // Starts after the right bracket animation
   }, [leftBracket, rightBracket]);
 
   return (

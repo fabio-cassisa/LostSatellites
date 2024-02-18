@@ -17,7 +17,7 @@ export const OrbitaAnimatedTitle = ({ leftBracket, rightBracket }) => {
         start: 'top bottom', // Adjust as needed
         end: '+=600', // Adjust as needed
         toggleActions: 'play none none none',
-        scrub: 1,
+        scrub: 0.5,
         once: true, // Animating only once after scrolling through the page.
         markers: false,
       },
@@ -34,9 +34,9 @@ export const OrbitaAnimatedTitle = ({ leftBracket, rightBracket }) => {
     // Animation to open the right bracket, revealing the text
     headerTimeline
       .to('.left-bracket-col', { opacity: 1, scaleX: 1, x: '0%', duration: 1, ease: 'power2.out' })
-      .to('.right-bracket-col', { opacity: 1, scaleX: 1, x: '0%', duration: 1, ease: 'power2.out' })
-      .to('.benv-orbita-text', { opacity: 1, y: '0%', duration: 0.5, ease: 'power2.out' }, "+=0.15") 
-      .to('.benv-orbita-subtext', { opacity: 1, y: '0%', duration: 0.5, ease: 'power2.out' }, "+=0.25");// Starts after the right bracket animation
+      .to('.right-bracket-col', { opacity: 1, scaleX: 1, x: '0%', duration: 1, delay: 0.5, ease: 'power2.out' })
+      .to('.benv-orbita-text', { opacity: 1, y: '0%', duration: 0.5, ease: 'power2.out' }, "+=0.30") 
+      .to('.benv-orbita-subtext', { opacity: 1, y: '0%', duration: 0.5, ease: 'power2.out' }, "+=0.35");// Starts after the right bracket animation
   }, [leftBracket, rightBracket]);
 
   return (

@@ -335,6 +335,14 @@
     height: 55%;
 }
 
+.ben-gif-link {
+    position: absolute;
+    top: 0;
+    left: 0; 
+    width: 100%; 
+    height: 100%;
+}
+
 .right-bracket-outline {
     margin-left: -7vw;
     height: 11vw;
@@ -351,7 +359,26 @@
     justify-content: flex-start;
     align-items: center;
     color: #ffffff;
-    gap: 20px;
+}
+
+.links-footer {
+    padding-top: 25px;
+    padding-left: 25px;
+    font-size: 1.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+/* Link styles */
+.links-footer a {
+    color: #ffffff; /* Set link color to white */
+    text-decoration: none; /* Remove default underline */
+}
+
+.links-footer a:hover {
+    text-decoration: underline; /* Add underline on hover */
 }
 
 /* Footer classes settings */
@@ -419,6 +446,10 @@
 
     .sx-side-graphic {
         top: 1300px;
+    }
+
+    .links-footer {
+        font-size: 1em;
     }
 }
 
@@ -578,6 +609,12 @@
     .join-links-wrapper {
         font-size: 1em;
         padding-left: 0px;
+    }
+
+    .links-footer {
+        padding-top: 0px;
+        padding-left: 15px;
+        font-size: 1em;
     }
 
     .footer-container {
