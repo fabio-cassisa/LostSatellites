@@ -342,6 +342,33 @@
     font-size: 1em;
 }
 
+/* Style for the footer email link */
+.footer-join-content a {
+            text-decoration: none; /* Remove underline */
+            color: #ffffff; /* Set text color */
+            position: relative; /* Required for the pseudo-element */
+            transition: color 0.3s ease; /* Smooth color transition */
+}
+
+/* Underline effect on hover */
+.footer-join-content a:before {
+            content: '';
+            display: block;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px; /* Adjust the underline height as needed */
+            background-color: #ffffff; /* Adjust the underline color as needed */
+            transition: width 0.3s ease; /* Smooth transition effect */
+}
+
+/* Expand underline on hover */
+.footer-join-content a:hover:before {
+            width: 100%; /* Expand the underline on hover */
+}
+
+
 .language {
     color: #ffffff;
     font-family: "objektiv-mk1", sans-serif;

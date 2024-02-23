@@ -22,7 +22,7 @@ export const FooterMobile = () => {
         </p>
         <div className="footer-join-content">
           <h3>JOIN US:</h3>
-          <p>lostsatellitestudio@gmail.com</p>
+          <p><a href="mailto:info@lostsatellitestudio.com">info@lostsatellitestudio.com</a></p>
         </div>
     </footer>
   )

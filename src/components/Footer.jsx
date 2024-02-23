@@ -18,7 +18,7 @@ export const Footer = () => {
         <h3 className="language">Rome, 2024</h3>
         <div className="footer-join-content">
           <h3>JOIN US:</h3>
-          <p>lostsatellitestudio@gmail.com</p>
+          <p><a href="mailto:info@lostsatellitestudio.com">info@lostsatellitestudio.com</a></p>
         </div>
     </footer>
   )
