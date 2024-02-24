@@ -118,6 +118,7 @@ export const LogoMinInverted = ({onClick}) => {
             xmlns="http://www.w3.org/2000/svg"
             onClick={onClick}
             style={{ cursor: 'pointer' }}
+            className="menu-element menu-mob"
         >
             <path 
                 d="M0 0V24H24V0H0ZM21.5883 18.5678L11.9727 18.9932L2.38829 14.3532V12.8039H8.8L10.2205 15.2624H13.7288L15.1454 12.8078L21.5922 16.7063V18.5678H21.5883ZM21.5883 11.641H15.1454L13.7249 9.18244H10.2166L8.8 11.6371L2.38829 7.76195V5.88878L11.9727 5.45171L21.5883 10.1385V11.6449V11.641Z" 

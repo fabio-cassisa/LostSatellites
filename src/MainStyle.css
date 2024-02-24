@@ -46,6 +46,10 @@
     align-items: center;
 }
 
+.menu-mob {
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
 .links-wrapper {
     background-color: #000000;
     display: flex;
@@ -78,19 +82,50 @@
     width: 100%;
 }
 
+.menu-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.mobile-menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(255, 162, 246, 0.8) 0.57%, rgba(255, 123, 163, 0.8) 80%); /* semi-transparent gradient */
+    z-index: 999; /* ensure it's on top of other content */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .mobile-menu-content {
+    text-align: center;
+  }
+  
+  .mobile-menu-content a {
+    display: block;
+    padding: 10px 0; /* adjust padding as needed */
+    color: #fff; /* text color */
+    text-decoration: none;
+    font-size: 2.5rem; /* adjust font size as needed */
+  }
+  
+  
 
 /* HomeAnimation settings: CANVAS mainly */
 .animation-container {
   position: relative;
   height: 100vh;
 }
-  
+
 .animation-canvas {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 100%; /* Responsive width */
+  height: 100%; /* Responsive height */
   object-fit: cover;
 }
 
@@ -300,6 +335,14 @@
     height: 55%;
 }
 
+.ben-gif-link {
+    position: absolute;
+    top: 0;
+    left: 0; 
+    width: 100%; 
+    height: 100%;
+}
+
 .right-bracket-outline {
     margin-left: -7vw;
     height: 11vw;
@@ -316,7 +359,26 @@
     justify-content: flex-start;
     align-items: center;
     color: #ffffff;
-    gap: 20px;
+}
+
+.links-footer {
+    padding-top: 25px;
+    padding-left: 25px;
+    font-size: 1.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+/* Link styles */
+.links-footer a {
+    color: #ffffff; /* Set link color to white */
+    text-decoration: none; /* Remove default underline */
+}
+
+.links-footer a:hover {
+    text-decoration: underline; /* Add underline on hover */
 }
 
 /* Footer classes settings */
@@ -411,6 +473,10 @@
 
     .sx-side-graphic {
         top: 1300px;
+    }
+
+    .links-footer {
+        font-size: 1em;
     }
 }
 
@@ -568,8 +634,14 @@
     }
 
     .join-links-wrapper {
-        font-size: 0.8em;
+        font-size: 1em;
         padding-left: 0px;
+    }
+
+    .links-footer {
+        padding-top: 0px;
+        padding-left: 15px;
+        font-size: 1em;
     }
 
     .footer-container {

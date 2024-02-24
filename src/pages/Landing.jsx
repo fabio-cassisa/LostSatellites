@@ -6,6 +6,7 @@ import { GalassieAnimatedTitle } from '../components/GalassieAnimatedTitle'
 import { Footer } from '../components/Footer'
 import { FooterMobile } from '../components/FooterMobile'
 import { EveOfVertical, LeftBracketOutline, LogoVertical, Rectangle01, Rectangle02, Rectangle03, Rectangle04, Rectangle05, RightBracketOutline, Rome2024 } from '../assets/SVGassets'
+import MobileMenu from '../components/MobileMenu'
 
 
 function Landing() {
@@ -13,7 +14,11 @@ function Landing() {
 
   return (
     <div className='main-wrapper'>
-        <HeaderMinAnimated />
+        {isMobile ? (
+          <MobileMenu />
+        ):(
+          <HeaderMinAnimated />
+        )}
         <section id='home' className='home-section'>
           <HomeAnimation />
           <div className='sx-side-graphic'>
@@ -71,7 +76,8 @@ function Landing() {
             </p>
             <div className='eve-main-wrapper'>
                 <LeftBracketOutline />
-                <img className='ben-gif' src="ben_gif.gif" alt="main character Eve of Destruction" />
+                <img  className='ben-gif' src="ben_gif.gif" alt="main character Eve of Destruction" />
+                <a className='ben-gif-link' href='https://www.kickstarter.com/projects/lostsatellitestudio/eve-of-destruction-0' target='_blank' rel='noopener noreferrer'></a>
                 <RightBracketOutline />
             </div>
           </div>
@@ -87,14 +93,13 @@ function Landing() {
         </section>
         {!isMobile &&
                 <section id='join' className='join-section'>
-                <p className='join-links-wrapper'>
-                  X<br />
-                  Discord<br />
-                  Instagram<br />
-                  Linkedin<br />
-                  Steam<br />
-                  Kickstarter<br />
-                </p>
+               <div className="links-footer">
+                  <a href='https://twitter.com/LostSatelliteSt' target='_blank' rel='noopener noreferrer'>X</a>
+                  <a href='https://discord.com/invite/29rbyfsp' target='_blank' rel='noopener noreferrer'>Discord</a>
+                  <a href='https://www.instagram.com/lostsatellite.studio' target='_blank' rel='noopener noreferrer'>Instagram</a>
+                  <a href='https://linkedin.com' target='_blank' rel='noopener noreferrer'>Linkedin</a>
+                  <a href='https://store.steampowered.com' target='_blank' rel='noopener noreferrer'>Steam</a>
+                </div>
             </section>
         }
         {!isMobile ? (
