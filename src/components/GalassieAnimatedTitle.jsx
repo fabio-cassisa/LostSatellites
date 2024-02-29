@@ -52,7 +52,7 @@ export const GalassieAnimatedTitle = ({ text, leftBracket, rightBracket }) => {
           <br />
           Sound design
           <br />
-          Game developers
+          Game development
           </div>
         </div>
         <RightBracket />

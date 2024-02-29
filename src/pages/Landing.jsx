@@ -5,7 +5,7 @@ import { OrbitaAnimatedTitle } from '../components/OrbitaAnimatedTitle'
 import { GalassieAnimatedTitle } from '../components/GalassieAnimatedTitle'
 import { Footer } from '../components/Footer'
 import { FooterMobile } from '../components/FooterMobile'
-import { EveOfVertical, LeftBracketOutline, LogoVertical, Rectangle01, Rectangle02, Rectangle03, Rectangle04, Rectangle05, RightBracketOutline, Rome2024 } from '../assets/SVGassets'
+import { EveOfVertical, LeftBracket, LogoVertical, Rectangle01, Rectangle02, Rectangle03, Rectangle04, Rectangle05, Rectangle06, RightBracket, Rome2024 } from '../assets/SVGassets'
 import MobileMenu from '../components/MobileMenu'
 
 
@@ -14,48 +14,44 @@ function Landing() {
 
   return (
     <div className='main-wrapper'>
-        {isMobile ? (
-          <MobileMenu />
-        ):(
-          <HeaderMinAnimated />
-        )}
+        {!isMobile && <HeaderMinAnimated />}
         <section id='home' className='home-section'>
           <HomeAnimation />
           <div className='sx-side-graphic'>
-            <Rectangle01 />
-            <LogoVertical />
-            <Rectangle01 />
             {isMobile ? (
               <OrbitaAnimatedTitle 
               leftBracket={{ scaleX: 1, x: '0%' }} 
               rightBracket={{ scaleX: 1, x: '-1000%' }}
               />
             ) : (
+              <>
+              <Rectangle01 />
+              <LogoVertical />
+              <Rectangle02 />
               <OrbitaAnimatedTitle 
               leftBracket={{ scaleX: 1, x: '0%' }} 
               rightBracket={{ scaleX: 1, x: '-975%' }}
               />
+              <Rectangle01 />
+              </>
             )}
-            {!isMobile && <Rectangle02 />}
           </div>
           <img className='color01' src="color01.png" alt="graphic01 on the right side" />
         </section>
         <section id='services' className='services-section'>
           {isMobile ? (
-            <div className='rect-pink-mob'>
+            <>
+              <img className='color02' src="color02.png" alt="graphic02 on the left side" />
               <GalassieAnimatedTitle
                 text={"GALASSIE"}
                 leftBracket={{ scaleX: 1, x: '500%' }} 
                 rightBracket={{ scaleX: 1, x: '0%' }} 
                 />
-              <img className='color02' src="color02.png" alt="graphic02 on the left side" />
               <Rome2024 />
-            </div>
+            </>
           ) : (
             <div className='galassie-wrapper'>
-            <div className='rect-pink'>
             <img className='color02' src="color02.png" alt="graphic02 on the left side" />
-            </div>
             <div className='dx-side-graphic'>
                 <Rectangle03 />
                 <GalassieAnimatedTitle
@@ -70,24 +66,39 @@ function Landing() {
         </section>
         <section id='eve' className='eve-section'>
           <div className='eve-content-wrapper'>
+          {isMobile ? (
+            <>
+            <div className='eve-main-wrapper'>
+                <LeftBracket />
+              <img  className='ben-gif' src="ben_gif.gif" alt="main character Eve of Destruction" />
+              <RightBracket />
+            </div>
             <p className='eve-description'>
-                Il nostro progetto di punta è <strong> Eve of Destruction</strong>,<br />un videogame action RPG 2D completamente illustrato a mano,<br />
-                vincitore del bando Zagarolo Game House (Lazio Innova, 2023).
+            Il nostro progetto di punta è <strong> Eve of Destruction</strong>,<br />un videogame action RPG 2D completamente illustrato a mano,<br />
+            vincitore del bando Zagarolo Game House (Lazio Innova, 2023).
+            </p>
+            <EveOfVertical />
+            </>
+          ) : (
+            <>
+            <p className='eve-description'>
+            Il nostro progetto di punta è <strong> Eve of Destruction</strong>,<br />un videogame action RPG 2D completamente illustrato a mano,<br />
+            vincitore del bando Zagarolo Game House (Lazio Innova, 2023).
             </p>
             <div className='eve-main-wrapper'>
-                <LeftBracketOutline />
-                <img  className='ben-gif' src="ben_gif.gif" alt="main character Eve of Destruction" />
-                <a className='ben-gif-link' href='https://www.kickstarter.com/projects/lostsatellitestudio/eve-of-destruction-0' target='_blank' rel='noopener noreferrer'></a>
-                <RightBracketOutline />
+              <LeftBracket />
+              <img  className='ben-gif' src="ben_gif.gif" alt="main character Eve of Destruction" />
+              <RightBracket />
             </div>
+            </>
+          )}
           </div>
-          {isMobile && <EveOfVertical />}
           {!isMobile && (
           <div className='sx-eve-graphic'>
             <Rome2024 />
             <Rectangle05 />
             <EveOfVertical />
-            <Rectangle05 />
+            <Rectangle06 />
           </div>
           )}
         </section>
@@ -100,6 +111,7 @@ function Landing() {
                   <a href='https://linkedin.com' target='_blank' rel='noopener noreferrer'>Linkedin</a>
                   <a href='https://store.steampowered.com' target='_blank' rel='noopener noreferrer'>Steam</a>
                 </div>
+                <img className='color03' src="color03.png" alt="graphic03 on the bottom of the page" />
             </section>
         }
         {!isMobile ? (

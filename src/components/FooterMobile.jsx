@@ -11,8 +11,14 @@ export const FooterMobile = () => {
 
   return (
     <footer className="footer-container">
+        <div className="footer-join-content">
+                  <FullLogoWhite onClick={() => scrollToSection('home')} className="menu-element" />
+                  <div>
+                  <p><a href="mailto:info@lostsatellitestudio.com">info@lostsatellitestudio.com</a></p>
+                  <p>P:IVA 17457521007</p>
+                  </div>
+        </div>
         <div className='join-links-wrapper'>
-                <FullLogoVerticalMob onClick={() => scrollToSection('home')}/>
                 <div className="links-footer">
                   <a href='https://twitter.com/LostSatelliteSt'>X</a>
                   <a href='https://discord.com/invite/29rbyfsp'>Discord</a>
@@ -20,10 +26,6 @@ export const FooterMobile = () => {
                   <a href='https://linkedin.com'>Linkedin</a>
                   <a href='https://store.steampowered.com'>Steam</a>
                 </div>
-        </div>
-        <div className="footer-join-content">
-          <h3>JOIN US:</h3>
-          <p><a href="mailto:info@lostsatellitestudio.com">info@lostsatellitestudio.com</a></p>
         </div>
     </footer>
   )

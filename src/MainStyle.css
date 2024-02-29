@@ -13,18 +13,26 @@
 .services-section {
     background-color: #000000;
     position: relative;
-    height: min-content;
+    height: max-content;
 } 
 
 .eve-section {
     background-color: #000000;
     position: relative;
-    height: 1200px;
+    height: 810px;
 } 
 
 .join-section {
     background-color: #000000;
     position: relative;
+}
+
+.color03 {
+    position: absolute;
+    bottom: -200px;
+    right: 0;
+    width: 70%;
+    z-index: 2;
 }
 
 
@@ -150,15 +158,17 @@
     width: 95%;
     position: absolute;
     z-index: 5;
-    bottom: -250px;
+    bottom: -350px;
     right: 0px;
 }
 
 .color02 {
-    width: 100%;
+    width: 80%;
+    height: 80%;
     position: absolute;
-    top: -100px;
+    bottom: -200px;
     left: 0px;
+    z-index: 4;
 }
 
 .logo-vertical-bar {
@@ -171,16 +181,14 @@
     display: flex;
     flex-direction: column;
     padding-top: 4.6vw;
-    padding-left: 1vw;
-    padding-right: 1vw;
+    padding-left: 1.2vw;
+    padding-right: 1.2vw;
     
 }
 
 .benv-orbita-text {
     margin: 0;
-    background: linear-gradient(180deg, rgb(123.09, 255, 152.11) 0%, rgb(162.01, 255, 249.42) 100%);
-    background-clip: text;
-    color: transparent; 
+    color:#ffffff;
     font-family: "objektiv-mk1", sans-serif;
     font-size: 6vw;
     font-weight: 900;
@@ -216,8 +224,8 @@
     display: flex;
     padding-top: 17vw;
     flex-direction: column;
-    padding-left: 1vw;
-    padding-right: 1vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
 }
 
 .title-text {
@@ -234,7 +242,8 @@
     margin: 0;
     font-family: "objektiv-mk1", sans-serif;
     font-size: 2.3vw;
-    font-weight: bold;
+    font-weight: 400;
+    text-align: right;
 }
 
 .left-bracket,
@@ -306,7 +315,7 @@
 
 /* Flex Wrapper for Eve content within the eve section */
 .eve-content-wrapper {
-    padding: 340px 10px 340px 90px;
+    padding: 245px 10px 90px 90px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -322,7 +331,10 @@
 
 .eve-description {
     color: #ffffff;
-    font-size: 1.2em;
+    font-size: 1.5em;
+    font-family: "objektiv-mk1", sans-serif;
+    font-weight: 400;
+    text-align: left;
 }
 
 .eve-of-vertical {
@@ -331,8 +343,10 @@
 }
 
 .ben-gif {
-    width: 55%;
-    height: 55%;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 45%;
+    height: 45%;
 }
 
 .ben-gif-link {
@@ -383,11 +397,13 @@
 
 /* Footer classes settings */
 .footer-container {
+    position: relative;
     background-color: #000000;
-    padding: 0px 25px 50px 25px;
+    padding: 25px 25px 200px 25px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px
 }
 
 .full-logo-white {
@@ -426,6 +442,8 @@
     margin: 0 0 0 0;
 }
 
+
+
 /* Medium devices (tablet) */
 @media (max-width: 1023px) {
     .home-section {
@@ -433,7 +451,7 @@
     }
 
      .eve-content-wrapper {
-        padding: 340px 10px 340px 75px;
+        padding: 140px 10px 140px 75px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -467,7 +485,7 @@
 /* Small devices (phones) */
 @media (max-width: 767px) {
     .home-section {
-        height: 3500px;
+        height: 3000px;
     }
 
     .eve-section {
@@ -490,10 +508,12 @@
 
     .sx-side-graphic {
         position: absolute;
-        top: 1300px;
+        top: 2300px;
         z-index: 2;
         width: min-content;
-        padding-left: 25px;
+        left: 50%;
+        padding-left: 0px;
+        transform: translateX(-50%);
         display: flex;
         flex-direction: column;
         gap: 35px;
@@ -515,22 +535,21 @@
     }
 
     .color01 {
-        width: 130%;
+        width: 100%;
         position: absolute;
         z-index: 1;
-        bottom: -100px;
-        right: 0px;
+        bottom: 90px;
+        left: 0px;
+        transform: scaleX(-1) scaleY(-1);
     }
     
     .color02 {
         width: 100%;
+        height: 100%;
         position: absolute;
-        top: 20px;
+        top: -250px;
         left: 0px;
-    }
-
-    .rect-pink {
-        width: 100%;
+        transform: scaleX(-1) scaleY(-1);
     }
 
     .rome2024 {
@@ -567,6 +586,7 @@
     
     .title-subtext {
         font-size: 5vw;
+        text-align: left;
     }
     
     .left-bracket,
@@ -604,12 +624,9 @@
         height: 23vw;
     }
 
-    .language {
-        font-size: 0.7em;
-    }
-
     .footer-join-content {
         font-size: 0.7em;
+        gap: 10px;
     }
 
     .full-logo-white {
@@ -618,17 +635,20 @@
     }
 
     .join-links-wrapper {
-        font-size: 1em;
+        font-size: 0.7em;
         padding-left: 0px;
     }
 
     .links-footer {
         padding-top: 0px;
-        padding-left: 15px;
+        padding-left: 0px;
         font-size: 1em;
     }
 
     .footer-container {
         padding: 0px 25px 30px 25px;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: end;
     }
 }
