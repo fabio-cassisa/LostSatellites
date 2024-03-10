@@ -14,7 +14,7 @@ export const FooterMobile = () => {
         <div className="footer-join-content">
                   <FullLogoWhite onClick={() => scrollToSection('home')} className="menu-element" />
                   <div>
-                  <p><a href="mailto:info@lostsatellitestudio.com">info@lostsatellitestudio.com</a></p>
+                  <p><a href="mailto:lostsatellitestudio@gmail.com">lostsatellitestudio@gmail.com</a></p>
                   <p>P:IVA 17457521007</p>
                   </div>
         </div>
