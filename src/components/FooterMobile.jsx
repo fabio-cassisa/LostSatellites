@@ -24,7 +24,7 @@ export const FooterMobile = () => {
                   <a href='https://discord.com/invite/29rbyfsp'>Discord</a>
                   <a href='https://www.instagram.com/lostsatellite.studio'>Instagram</a>
                   <a href='https://linkedin.com'>Linkedin</a>
-                  <a href='https://store.steampowered.com'>Steam</a>
+                  <a href='https://store.steampowered.com/app/2839460/Eve_of_Destruction/'>Steam</a>
                 </div>
         </div>
     </footer>
