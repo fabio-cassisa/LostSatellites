@@ -130,7 +130,7 @@ function Landing() {
             <a href='https://twitter.com/LostSatelliteSt' target='_blank' rel='noopener noreferrer'>X</a>
             <a href='https://discord.com/invite/29rbyfsp' target='_blank' rel='noopener noreferrer'>Discord</a>
             <a href='https://www.instagram.com/lostsatellite.studio' target='_blank' rel='noopener noreferrer'>Instagram</a>
-            <a href='https://linkedin.com' target='_blank' rel='noopener noreferrer'>Linkedin</a>
+            <a href='https://www.linkedin.com/company/lost-satellite-studio/' target='_blank' rel='noopener noreferrer'>Linkedin</a>
             <a href='https://store.steampowered.com/app/2839460/Eve_of_Destruction/' target='_blank' rel='noopener noreferrer'>Steam</a>
           </div>
           <img className='color03' src="color03.png" alt="graphic03 on the bottom of the page" />
