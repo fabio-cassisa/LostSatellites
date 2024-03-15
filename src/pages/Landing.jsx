@@ -19,6 +19,7 @@ import {
   RightBracket,
   Rome2024
 } from '../assets/SVGassets';
+import { HeaderLogoOnly } from '../components/HeaderLogoOnly';
 
 function Landing() {
   const isMobile = useIsMobile();
@@ -116,7 +117,7 @@ function Landing() {
 
   return (
     <div className='main-wrapper'>
-      {!isMobile && <HeaderMinAnimated />}
+      {!isMobile ? (<HeaderMinAnimated />) : (<HeaderLogoOnly />)}
       <section id='home' className='home-section'>
         <HomeAnimation />
         <HomeTitleSection />

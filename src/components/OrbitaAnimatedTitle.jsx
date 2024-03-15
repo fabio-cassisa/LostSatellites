@@ -33,10 +33,10 @@ export const OrbitaAnimatedTitle = ({ leftBracket, rightBracket }) => {
 
     // Animation to open the right bracket, revealing the text
     headerTimeline
-      .to('.left-bracket-col', { opacity: 1, scaleX: 1, x: '0%', duration: 1, ease: 'power2.out' })
-      .to('.right-bracket-col', { opacity: 1, scaleX: 1, x: '0%', duration: 1, delay: 0.5, ease: 'power2.out' })
-      .to('.benv-orbita-text', { opacity: 1, y: '0%', duration: 0.5, ease: 'power2.out' }, "+=0.30") 
-      .to('.benv-orbita-subtext', { opacity: 1, y: '0%', duration: 0.5, ease: 'power2.out' }, "+=0.35");// Starts after the right bracket animation
+      .to('.left-bracket-col', { opacity: 1, scaleX: 1, x: '0%', duration: 3, ease: 'power2.out' })
+      .to('.right-bracket-col', { opacity: 1, scaleX: 1, x: '0%', duration: 3, delay: 2, ease: 'power2.out' })
+      .to('.benv-orbita-text', { opacity: 1, y: '0%', duration: 1.5, ease: 'power2.out' }, "+=0.50") 
+      .to('.benv-orbita-subtext', { opacity: 1, y: '0%', duration: 1.5, ease: 'power2.out' }, "+=0.65");// Starts after the right bracket animation
   }, [leftBracket, rightBracket]);
 
   return (
