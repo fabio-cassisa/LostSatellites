@@ -6,9 +6,9 @@ landing page for a design studio based in Rome.
 
 ## context
 
-Lost Satellites is a design studio founded by friends in Rome, 2024. They needed a landing page that matched their aesthetic — bold, animated, and slightly cinematic. I designed and built this as a freelance project, handling both the visual direction and the frontend development.
+Lost Satellites is a design studio founded in Rome, 2024. they needed a web presence that matched their aesthetic — bold, animated, slightly cinematic. freelance project covering visual direction and frontend build.
 
-All visual assets were crafted by the studio. I focused on translating their identity into an interactive web experience using GSAP for scroll-driven animations and transitions.
+all visual assets crafted by the studio. the code focuses on translating that identity into scroll-driven animations and transitions with GSAP.
 
 ## stack
 
@@ -21,7 +21,7 @@ src/
 ├── components/   # ui components
 ├── pages/        # route pages
 ├── hooks/        # custom hooks
-├── assets/       # studio-crafted visual assets
+├── assets/       # studio-crafted visuals
 └── App.jsx       # entry point
 ```
 
@@ -35,14 +35,14 @@ npm run dev
 ## highlights
 
 - scroll-driven animations with GSAP + ScrollMagic
-- studio-crafted assets integrated into a responsive layout
-- cinematic feel — intentional pacing and visual rhythm
-- built as a single-page experience
+- cinematic pacing — intentional visual rhythm
+- responsive single-page experience
+- studio assets integrated into a cohesive layout
 
 ## status
 
-🟢 v1 shipped and live. future iterations may include a project gallery and contact flow.
+🟢 v1 shipped and live. future iterations may add a project gallery and contact flow.
 
 ---
 
-<sub>built by [fabio cassisa](https://github.com/fabio-cassisa) · assets by lost satellites studio</sub>
+<sub>code by [fabio cassisa](https://github.com/fabio-cassisa) · assets by lost satellites studio</sub>
