@@ -1,4 +1,4 @@
-import { FullLogoVerticalMob, FullLogoWhite } from "../assets/SVGassets"
+import { FullLogoVerticalMob } from "../assets/SVGassets"
 import { gsap } from "gsap";
 import ScrollToPlugin from 'gsap/ScrollToPlugin';
 
@@ -14,11 +14,11 @@ export const FooterMobile = () => {
         <div className='join-links-wrapper'>
                 <FullLogoVerticalMob onClick={() => scrollToSection('home')}/>
                 <div className="links-footer">
-                  <a href='https://twitter.com/LostSatelliteSt'>X</a>
-                  <a href='https://discord.com/invite/29rbyfsp'>Discord</a>
-                  <a href='https://www.instagram.com/lostsatellite.studio'>Instagram</a>
-                  <a href='https://linkedin.com'>Linkedin</a>
-                  <a href='https://store.steampowered.com'>Steam</a>
+                  <a href='https://twitter.com/LostSatelliteSt' target='_blank' rel='noopener noreferrer'>X</a>
+                  <a href='https://discord.com/invite/29rbyfsp' target='_blank' rel='noopener noreferrer'>Discord</a>
+                  <a href='https://www.instagram.com/lostsatellite.studio' target='_blank' rel='noopener noreferrer'>Instagram</a>
+                  <a href='https://linkedin.com' target='_blank' rel='noopener noreferrer'>Linkedin</a>
+                  <a href='https://store.steampowered.com' target='_blank' rel='noopener noreferrer'>Steam</a>
                 </div>
         </div>
         <div className="footer-join-content">

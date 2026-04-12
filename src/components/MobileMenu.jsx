@@ -14,6 +14,11 @@ const MobileMenu = () => {
     setMenuOpen(false);
   };
 
+  const handleNavClick = (e, sectionId) => {
+    e.preventDefault();
+    scrollToSection(sectionId);
+  };
+
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
@@ -39,9 +44,9 @@ const MobileMenu = () => {
       {menuOpen && (
         <div className="mobile-menu-overlay">
           <div className="mobile-menu-content">
-            <a onClick={() => scrollToSection('services')} className="menu-element">services</a>
-            <a onClick={() => scrollToSection('eve')} className="menu-element">eod</a>
-            <a onClick={() => scrollToSection('join')} className="menu-element">join</a>
+            <a href="#services" onClick={(e) => handleNavClick(e, 'services')} className="menu-element">services</a>
+            <a href="#eve" onClick={(e) => handleNavClick(e, 'eve')} className="menu-element">eod</a>
+            <a href="#join" onClick={(e) => handleNavClick(e, 'join')} className="menu-element">join</a>
           </div>
         </div>
       )}
